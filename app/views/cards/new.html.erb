@@ -1,2 +1,14 @@
-<h1>Cards#new</h1>
-<p>Find me in app/views/cards/new.html.erb</p>
+<div class="bg-image bg-image-sex">
+  <h1 class="top-header">T206 Query</h1>
+
+  </br>
+
+  <div class="home-text">
+    <%= form_for @card do |f| %>
+      <h3> Input card name: </h3>
+      <%= f.text_field :card_name %>
+      <%= f.submit "Submit"%>
+    <% end %>
+  </div>
+
+</div>
