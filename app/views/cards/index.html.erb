@@ -1,2 +1,20 @@
-<h1>Cards#index</h1>
-<p>Find me in app/views/cards/index.html.erb</p>
+<div class="bg-image bg-image-sex">
+  <h1 class="top-header">Card Information</h1>
+</div>
+
+</br>
+
+<div class="Testtable">
+  <table>
+    <thead>
+      <th>Details</th>
+    </thead>
+    <tbody>
+      <% @info[0].each do |x| %>
+        <tr>
+          <td><%= x %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

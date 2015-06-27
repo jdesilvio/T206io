@@ -10,6 +10,7 @@ class CardsController < ApplicationController
     @card = Card.new(card_params)
 
     if @card.save
+      @info = Pgdb.getCardInfo(@card.card_name)
       render :index
     else
       render 'new'
@@ -19,6 +20,6 @@ class CardsController < ApplicationController
   private
 
   def card_params
-    params.require(:idea).permit(:card_name)
+    params.require(:card).permit(:card_name)
   end
 end

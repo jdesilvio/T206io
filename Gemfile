@@ -14,6 +14,8 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'pg',             '0.18.1'
+  gem 'rails_12factor'
 end
 
 group :production do
