@@ -10,9 +10,11 @@
       <th>Details</th>
     </thead>
     <tbody>
-      <% @info.each do |x| %>
+      <% @info.each do |row| %>
         <tr>
-          <td><%= x %></td>
+          <% row.each do |element| %>
+            <td><%= element %></td>
+          <% end %>
         </tr>
       <% end %>
     </tbody>
