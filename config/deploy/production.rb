@@ -65,6 +65,6 @@ after "deploy:update_code","deploy:config_symlink"
 namespace :deploy do
 
   task :config_symlink do
-    run "cp #{shared_path}/../../shared/database.yml #{release_path}/config/database.yml"
+    run "cp #{shared_path}/shared/database.yml #{release_path}/config/database.yml"
   end
 end
