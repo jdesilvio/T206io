@@ -16,6 +16,7 @@ group :development, :test do
   gem 'spring'
   gem 'pg',             '0.18.1'
   gem 'rails_12factor'
+  gem 'capistrano-rails', '~> 1.1.1'
 end
 
 group :production do
