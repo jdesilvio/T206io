@@ -1,18 +1,20 @@
 class Card < ActiveRecord::Base
 end
 
-class Pgdb < ActiveRecord::Base.establish_connection(
-    adapter: => ENV['PG_ADAPTER'],
-    database: => ENV['PG_DB'],
-    username: => ENV['PG_USER'],
-    password: => ENV['PG_PW'],
-    host: => ENV['PG_HOST']
-  )
+class Pgdb < ActiveRecord::Base
 
   self.abstract_class = true
   self.table_name = 'psa'
 
-  establish_connection :pg_development
+  establish_connection(
+    adapter: ENV["PG_ADAPTER"],
+    database: ENV["PG_DB"],
+    username: ENV["PG_USER"],
+    password: ENV["PG_PW"],
+    host: ENV["PG_HOST"]
+  )
+
+  #establish_connection :pg_development
 
   def self.getCardInfo(card_name)
     get = connection.query("SELECT card, brand, grade, amount
@@ -22,3 +24,4 @@ class Pgdb < ActiveRecord::Base.establish_connection(
     get
   end
 end
+
