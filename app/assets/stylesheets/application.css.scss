@@ -1,0 +1,82 @@
+.top-header {
+  color: black;
+  text-align: center;
+  padding: 40px;
+  margin:0;
+  font:3em "Helvetica", cursive;
+}
+
+div.card-input {
+  text-align: center;
+  padding: 40px;
+  margin: 40px;
+}
+
+div.card-input h3 {
+  color: black;
+  font:2em "Helvetica", cursive;
+}
+
+div.card-input form input[type=submit] {
+  display: inline-block;
+  padding: 5px 45px;
+  font:1em "Helvetica", cursive;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #f0f0f0;
+  background: #2cb22c;
+  border: none;
+  position: relative;
+  margin:0 auto;
+  text-align: center;
+}
+
+div.card-input form input[type=submit]:hover {
+  background: #32CD32;
+}
+
+div.card-input form input[type=text] {
+  display: inline-block;
+  padding: 5px 45px;
+  font:1em "Helvetica", cursive;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #CA0027;
+  background: #f0f0f0;
+  border: none;
+  position: relative;
+  margin:0 auto;
+  text-align: center;
+}
+
+.button-span {
+  text-align: center;
+}
+
+table {
+  color: black;
+  text-align: center;
+  padding: 40px;
+  font:1em "Helvetica", cursive;
+  width:70%;
+  margin-left:15%;
+  margin-right:15%;
+  border-collapse: collapse;
+}
+
+th, td {
+   border: 1px solid #CCCCCC;
+  padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: #E6E6E6;
+}
