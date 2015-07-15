@@ -21,10 +21,12 @@ class Pgdb < ActiveRecord::Base
   end
 
   def self.getCardInfo(card_name)
-    get = connection.query("SELECT card, brand, grade, amount
+    get = connection.query("SELECT psa.card, backs.full_back, psa.grade, psa.amount
                             FROM psa
-                            WHERE card LIKE UPPER('%' || #{connection.quote(card_name)} || '%') AND amount > 0
-                            ORDER BY card ASC, brand ASC, grade ASC")
+                            LEFT OUTER JOIN backs
+                            ON psa.brand = backs.psa_back
+                            WHERE psa.card LIKE UPPER('%' || #{connection.quote(card_name)} || '%') AND psa.amount > 0
+                            ORDER BY psa.card ASC, backs.full_back ASC, psa.grade ASC")
     get
   end
 end
