@@ -80,3 +80,23 @@ th, td {
 tbody tr:nth-child(odd) {
    background-color: #E6E6E6;
 }
+
+
+input[type="search"] {
+  font:1em "Helvetica", cursive;
+  margin: 0 0 10px 0;
+  padding: 10px;
+	width: 70%;
+	border: 1px solid #CCCCCC;
+}
+
+input[type="search"]:focus {
+	border-color: #009C7C;
+	background: #fff;
+	color: #5d5d5d;
+	box-shadow: 0 1px 1px rgba(60, 140, 210, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6)
+}
+
+div.filter {
+  text-align: center;
+}
