@@ -1,14 +1,13 @@
-<div>
-  <h1 class="top-header">T206 Database</h1>
-
-  </br>
-
-  <div class="card-input">
-    <%= form_for @card do |f| %>
-      <h3> Input card name: </h3>
-      <%= f.text_field :card_name %>
-      <%= f.submit "Submit"%>
-    <% end %>
+<body id="home">
+  <%=image_tag("logo.png", alt: "Logo")%>
+  <div>
+    <div class="card-input">
+      <%= form_for @card do |f| %>
+        </br></br></br></br>
+        <%= f.text_field :card_name, :placeholder => "Input Card Name" %>
+        </br></br></br>
+        <%= f.submit "Submit"%>
+      <% end %>
+    </div>
   </div>
-
-</div>
+</body>

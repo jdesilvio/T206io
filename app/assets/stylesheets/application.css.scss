@@ -1,6 +1,6 @@
 .top-header {
-  color: black;
-  text-align: center;
+  color: white;
+  text-align: left;
   padding: 40px;
   margin:0;
   font:3em "Helvetica", cursive;
@@ -13,43 +13,51 @@ div.card-input {
 }
 
 div.card-input h3 {
-  color: black;
+  color: white;
   font:2em "Helvetica", cursive;
 }
 
 div.card-input form input[type=submit] {
-  display: inline-block;
-  padding: 5px 45px;
-  font:1em "Helvetica", cursive;
+  font:1.5em "Ubuntu", cursive;
   line-height: 1.8;
-  appearance: none;
-  box-shadow: none;
-  -webkit-border-radius: 5;
-  -moz-border-radius: 5;
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+  background: Transparent;
+  color: #fff;
+  border: 2px solid #fff;
   border-radius: 5px;
-  color: #f0f0f0;
-  background: #2cb22c;
-  border: none;
-  position: relative;
-  margin:0 auto;
   text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out,
+              border-color 0.5s ease-out,
+              color 0.5s ease-in;
 }
 
-div.card-input form input[type=submit]:hover {
-  background: #32CD32;
+div.card-input form input[type=submit]:hover,
+div.card-input form input[type=submit]:active{
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.5s ease-in,
+              border-color 0.5s ease-in,
+              color 0.5s ease-in;
 }
 
 div.card-input form input[type=text] {
   display: inline-block;
   padding: 5px 45px;
-  font:1em "Helvetica", cursive;
+  font:1.5em "Helvetica", cursive;
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
-  color: #CA0027;
+  color: black;
   background: #f0f0f0;
   border: none;
   position: relative;
@@ -99,4 +107,12 @@ input[type="search"]:focus {
 
 div.filter {
   text-align: center;
+}
+
+body#home {
+  background: asset-data-url('t206bg.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
