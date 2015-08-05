@@ -49,7 +49,8 @@ div.card-input form input[type=submit]:active{
 
 div.card-input form input[type=text] {
   display: inline-block;
-  padding: 5px 45px;
+  padding: 0px 45px;
+  height: 50px;
   font:1.5em "Helvetica", cursive;
   line-height: 1.8;
   appearance: none;
@@ -63,7 +64,27 @@ div.card-input form input[type=text] {
   position: relative;
   margin:0 auto;
   text-align: center;
-  width: 25%;
+  width: 310px;
+}
+
+div.card-input form select,
+div.card-input form select option {
+  display: inline-block;
+  height: 50px;
+  font:1em "Helvetica", cursive;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: black;
+  background: #f0f0f0;
+  border: none;
+  position: relative;
+  margin:0 auto;
+  text-align: center;
+  width: 400px;
 }
 
 .button-span {

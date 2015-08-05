@@ -5,6 +5,8 @@
       <%= form_for @card do |f| %>
         </br></br></br></br>
         <%= f.text_field :card_name, :placeholder => "Input Card Name (Ex: Cobb)" %>
+        </br></br>
+        <%= f.select :card_name, options_from_collection_for_select(Pgdb.select(:psa_card).distinct.order(:psa_card), :psa_card, :psa_card, ) %>
         </br></br></br>
         <%= f.submit "Submit"%>
       <% end %>
