@@ -10,7 +10,7 @@ class CardsController < ApplicationController
     @card = Card.new(card_params)
 
     if @card.save
-      @info = Pgdb.where("psa_card LIKE ?", "%#{card_params[:card_name]}%")
+      @info = Pgdb.where("psa_card LIKE ?", "%#{card_params[:card_name]}%".upcase)
       render :index
     else
       render 'new'
