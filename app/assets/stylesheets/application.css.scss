@@ -59,12 +59,26 @@ div.card-input form input[type=text] {
   -moz-border-radius: 5;
   border-radius: 5px;
   color: black;
-  background: #f0f0f0;
+  background: rgba(255, 255, 255, .5);
   border: none;
   position: relative;
   margin:0 auto;
   text-align: center;
   width: 310px;
+}
+
+input::-webkit-input-placeholder {
+	color: rgba(56, 56, 56, .5);
+}
+
+input::-moz-placeholder {
+	color: rgba(56, 56, 56, .5);
+}
+input:-moz-placeholder {
+	color: rgba(56, 56, 56, .5);
+}
+input:-ms-input-placeholder {
+	color: rgba(56, 56, 56, .5);
 }
 
 div.card-input form select,
@@ -79,7 +93,7 @@ div.card-input form select option {
   -moz-border-radius: 5;
   border-radius: 5px;
   color: black;
-  background: #f0f0f0;
+  background: rgba(255, 255, 255, .5);
   border: none;
   position: relative;
   margin:0 auto;
