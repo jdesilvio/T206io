@@ -18,8 +18,8 @@
     <tbody>
       <% @info.each do |row| %>
         <tr>
-          <% row.each do |element| %>
-            <td><%= element %></td>
+          <% row.attributes.each do |key, value| %>
+            <td><%= "#{value}" %></td>
           <% end %>
         </tr>
       <% end %>

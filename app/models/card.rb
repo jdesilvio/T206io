@@ -4,7 +4,7 @@ end
 class Pgdb < ActiveRecord::Base
 
   self.abstract_class = true
-  self.table_name = 'psa'
+  self.table_name = 'psa_pop_view'
 
   if Rails.env.production?
     establish_connection(
@@ -20,14 +20,5 @@ class Pgdb < ActiveRecord::Base
     establish_connection :pg_development
   end
 
-  def self.getCardInfo(card_name)
-    get = connection.query("SELECT psa.card, backs.full_back, psa.grade, psa.amount
-                            FROM psa
-                            LEFT OUTER JOIN backs
-                            ON psa.brand = backs.psa_back
-                            WHERE psa.card LIKE UPPER('%' || #{connection.quote(card_name)} || '%') AND psa.amount > 0
-                            ORDER BY psa.card ASC, backs.full_back ASC, psa.grade ASC")
-    get
-  end
 end
 
