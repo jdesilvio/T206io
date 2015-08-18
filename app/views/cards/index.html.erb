@@ -20,7 +20,11 @@
       <% @info.each do |row| %>
         <tr>
           <% row.attributes.each do |key, value| %>
-            <td><%= "#{value}" %></td>
+            <% if key == 'val' %>
+              <td><%= "#{number_to_currency(value)}" %></td>
+            <% else %>
+              <td><%= "#{value}" %></td>
+            <% end %>
           <% end %>
         </tr>
       <% end %>
