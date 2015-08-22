@@ -81,12 +81,11 @@ div.card-input form input[type=submit]:hover,
 div.card-input form input[type=submit]:active{
   background-color: #fff; /* fallback */
   background-color: rgba(255, 255, 255, 0.4);
-  color: black;
   border-color: #fff; /* fallback */
   border-color: rgba(255, 255, 255, 0.4);
-  transition: background-color 0.5s ease-in,
-              border-color 0.5s ease-in,
-              color 0.5s ease-in;
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in,
+              color 0.3s ease-in;
 }
 
 div.card-input form input[type=text] {
