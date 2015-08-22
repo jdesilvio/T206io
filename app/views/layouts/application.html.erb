@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Monster</title>
+  <title>The T206 Project</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
 </head>
 <body>
+  <div class="wrapper">
 
-<%= yield %>
+    <% if current_page?(root_path) %>
+    <% else %>
+        <%= render 'layouts/header' %>
+    <% end %>
 
+    <%= yield %>
+
+    <%= render 'layouts/footer' %>
+  </div>
 </body>
 </html>
