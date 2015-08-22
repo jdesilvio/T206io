@@ -1,3 +1,30 @@
+/* header and footer */
+
+.footer {
+  height: 30px;
+  line-height: 30px;
+  background: #000;
+  opacity: .4;
+  float: left;
+	padding: 25px;
+	min-width: 100%;
+  position: fixed;
+  margin: 0% -8px;
+  bottom: 0%
+}
+
+.git-link {
+  color: white;
+  font: 1em "Helvetica", cursive;
+  text-decoration: none;
+}
+
+.git-link:hover {
+  color: #ccc;
+}
+
+/* */
+
 .top-header {
   color: black;
   text-align: center;
@@ -105,14 +132,15 @@ div.card-input form select option {
   text-align: center;
 }
 
+/* table */
+
 table {
   color: black;
   text-align: center;
   padding: 40px;
   font:1em "Helvetica", cursive;
   width:80%;
-  margin-left:10%;
-  margin-right:10%;
+  margin: 0% 10% 10% 10%;
   border-collapse: collapse;
 }
 
@@ -125,6 +153,7 @@ tbody tr:nth-child(odd) {
    background-color: #E6E6E6;
 }
 
+/* search filter */
 
 input[type="search"] {
   font:1em "Helvetica", cursive;
@@ -144,6 +173,8 @@ input[type="search"]:focus {
 div.filter {
   text-align: center;
 }
+
+/* background image */
 
 body#home {
   background: asset-data-url('t206bg.jpeg') no-repeat center center fixed;

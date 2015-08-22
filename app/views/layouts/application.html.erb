@@ -8,8 +8,10 @@
   <%= render 'layouts/shim' %>
 </head>
 <body>
+  <div class="wrapper">
+    <%= yield %>
 
-<%= yield %>
-
+    <%= render 'layouts/footer' %>
+  </div>
 </body>
 </html>
