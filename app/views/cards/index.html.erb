@@ -8,6 +8,24 @@
   <div class = "filter">
     <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter"/>
   </div>
+
+  <table class="order-table">
+    <thead>
+      <th>Card Back</th>
+      <th>Amount</th>
+    </thead>
+    <tbody>
+      <% @agg_backs.each_row do |row| %>
+        <tr>
+          <% row[0][1..-2].gsub('"', '').reverse.sub(',', '|').reverse.split('|').each do |a| %>
+            <td><%= a %></td>
+          <% end %>
+
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
   <table class="order-table">
     <thead>
       <th>Card Name</th>

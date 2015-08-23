@@ -4,7 +4,6 @@ end
 class Pgdb < ActiveRecord::Base
 
   self.abstract_class = true
-  self.table_name = 'psa_pop_view'
 
   if Rails.env.production?
     establish_connection(
@@ -22,3 +21,10 @@ class Pgdb < ActiveRecord::Base
 
 end
 
+class Psa_pop < Pgdb
+  self.table_name = 'psa_pop_view'
+end
+
+class Agg_backs < Pgdb
+  self.table_name = 'agg_backs'
+end
