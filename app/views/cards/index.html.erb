@@ -1,23 +1,53 @@
 <div>
-  <h1 class="top-header"><%= @card.card_name %> Card Information</h1>
+  <h1 class="top-header"><%= @card.card_name.split.map(&:capitalize).join(' ') %> - Card Information</h1>
 </div>
 
 </br>
 
 <div>
   <h2>Card Back Summary</h1>
+
   <table class="order-table">
     <thead>
       <th>Card Back</th>
-      <th>Amount</th>
+      <th>Population</th>
+      <th>Population %</th>
     </thead>
     <tbody>
-      <% @agg_backs.each_row do |row| %>
+      <% @summary_backs.each_row do |row| %>
         <tr>
-          <% row[0][1..-2].gsub('"', '').reverse.sub(',', '|').reverse.split('|').each do |a| %>
-            <td><%= a %></td>
+          <% row.each do |element| %>
+            <% if element.to_f < 1 && element.to_f > 0 %>
+              <% x = element.to_f * 100 %>
+              <td><%= x.round(2).to_s + "%" %></td>
+            <% else %>
+              <td><%= element %></td>
+            <% end %>
           <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
+  <h2>Card Grade Summary</h1>
+
+  <table class="order-table">
+    <thead>
+      <th>Card Grade</th>
+      <th>Population</th>
+      <th>Population %</th>
+    </thead>
+    <tbody>
+      <% @summary_grades.each_row do |row| %>
+        <tr>
+          <% row.each do |element| %>
+            <% if element.to_f < 1 && element.to_f > 0 %>
+              <% x = element.to_f * 100 %>
+              <td><%= x.round(2).to_s + "%" %></td>
+            <% else %>
+              <td><%= element %></td>
+            <% end %>
+          <% end %>
         </tr>
       <% end %>
     </tbody>
@@ -31,17 +61,17 @@
 
   <table class="order-table">
     <thead>
-      <th>Card Name</th>
       <th>Card Back</th>
       <th>Grade</th>
-      <th>Quantity</th>
+      <th>Population</th>
       <th>Estimated Value</th>
     </thead>
     <tbody>
       <% @info.each do |row| %>
         <tr>
           <% row.attributes.each do |key, value| %>
-            <% if key == 'val' %>
+            <% if key == 'psa_card' %>
+            <% elsif key == 'val' %>
               <td><%= "#{number_to_currency(value)}" %></td>
             <% else %>
               <td><%= "#{value}" %></td>
