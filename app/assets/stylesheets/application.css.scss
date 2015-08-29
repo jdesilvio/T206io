@@ -46,6 +46,31 @@
   height: 70px;
 }
 
+.navbar-right {
+  margin:0;
+  padding: 10px;
+  right: 10%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float:right;
+  display:block;
+  overflow:hidden;
+}
+
+.navbar-right a {
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  font:normal 1em "Helvetica", sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.navbar-right a:hover {
+  color: #ccc;
+}
+
 /* */
 
 .top-header {
