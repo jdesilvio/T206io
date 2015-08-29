@@ -1,17 +1,24 @@
 /* header and footer */
 
-.footer {
+#footer, #footer_home {
   height: 30px;
   line-height: 30px;
-  background: #000;
-  opacity: .4;
   float: left;
 	padding: 25px;
 	min-width: 100%;
-  position: fixed;
   margin: 0% -8px;
-  bottom: 0%;
   box-shadow: 0 -2px 3px rgba(0,0,0,.4);
+  position: fixed;
+}
+
+#footer {
+  background: #2E2E2E;
+}
+
+#footer_home {
+  background: #000;
+  opacity: .4;
+  bottom: 0%;
 }
 
 .git-link {
@@ -24,7 +31,7 @@
   color: #ccc;
 }
 
-.header {
+#header {
   height: 70px;
   background: #646464;
 	min-width: 100%;
@@ -165,12 +172,12 @@ table {
 }
 
 th, td {
-   border: 1px solid #CCCCCC;
+  border: 1px solid #CCCCCC;
   padding: 10px;
 }
 
 tbody tr:nth-child(odd) {
-   background-color: #E6E6E6;
+  background-color: #E6E6E6;
 }
 
 /* search filter */

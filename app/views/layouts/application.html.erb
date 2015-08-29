@@ -12,12 +12,16 @@
 
     <% if current_page?(root_path) %>
     <% else %>
-        <%= render 'layouts/header' %>
+      <%= render 'layouts/header' %>
     <% end %>
 
     <%= yield %>
 
-    <%= render 'layouts/footer' %>
+    <% if current_page?(root_path) %>
+      <%= render 'layouts/footer_home' %>
+    <% else %>
+      <%= render 'layouts/footer' %>
+    <% end %>
   </div>
 </body>
 </html>
