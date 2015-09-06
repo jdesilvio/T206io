@@ -23,7 +23,7 @@
 
 .git-link {
   color: white;
-  font: 1em "Helvetica", cursive;
+  font: 1em "Helvetica", sans-serif;
   text-decoration: none;
 }
 
@@ -76,14 +76,14 @@
   color: black;
   text-align: center;
   margin-top: 160px;
-  font:3em "Helvetica", cursive;
+  font:3em "Helvetica", sans-serif;
 }
 
 h2 {
   color: black;
   text-align: center;
   margin-top: 20px;
-  font:2em "Helvetica", cursive;
+  font:2em "Helvetica", sans-serif;
 }
 
 div.card-input {
@@ -94,18 +94,19 @@ div.card-input {
 
 div.card-input h3 {
   color: white;
-  font:2em "Helvetica", cursive;
+  font:2em "Helvetica", sans-serif;
 }
 
 div.card-input form input[type=submit] {
-  font:1.5em "Ubuntu", cursive;
+  font:1.5em "Helvetica", sans-serif;
+  font-weight:lighter;
   line-height: 1.8;
   display: inline-block;
   width: 200px;
   padding: 5px;
   background: Transparent;
   color: #fff;
-  border: 2px solid #fff;
+  border: 1.5px solid #fff;
   border-radius: 5px;
   text-align: center;
   outline: none;
@@ -130,7 +131,7 @@ div.card-input form input[type=text] {
   display: inline-block;
   padding: 0px 45px;
   height: 50px;
-  font:1.5em "Helvetica", cursive;
+  font:1.5em "Helvetica", sans-serif;
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
@@ -164,7 +165,7 @@ div.card-input form select,
 div.card-input form select option {
   display: inline-block;
   height: 50px;
-  font:1em "Helvetica", cursive;
+  font:1em "Helvetica", sans-serif;
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
@@ -189,7 +190,7 @@ div.card-input form select option {
 table {
   color: black;
   text-align: center;
-  font:1em "Helvetica", cursive;
+  font:1em "Helvetica", sans-serif;
   width:80%;
   margin: 0% 10% 10% 10%;
   border-collapse: collapse;
@@ -207,7 +208,7 @@ tbody tr:nth-child(odd) {
 /* search filter */
 
 input[type="search"] {
-  font:1em "Helvetica", cursive;
+  font:1em "Helvetica", sans-serif;
   margin: 0 0 10px 0;
   padding: 10px;
 	width: 80%;
