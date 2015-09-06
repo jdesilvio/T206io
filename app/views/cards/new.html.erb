@@ -1,12 +1,15 @@
 <body id="home">
   <%= image_tag("logo.png", alt: "Logo") %>
   <div>
+    <div id="home-main">
+      <h1 class="home-main-text">The T206 Project</h1>
+      <h3 class="home-main-text">An open source project designed to create the most comprehensive database of the legendary T206 baseball card set</h3>
+    </div>
     <div class="card-input">
       <%= form_for @card do |f| %>
-        </br></br></br></br>
         <%= f.select :card_name, options_from_collection_for_select(Psa_pop.select(:psa_card).distinct.order(:psa_card), :psa_card, :psa_card, ) %>
-        </br></br></br>
-        <%= f.submit "Submit"%>
+        </br>
+        <%= f.submit "Card Details"%>
       <% end %>
     </div>
   </div>

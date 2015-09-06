@@ -1,3 +1,36 @@
+/* basic element syling */
+
+h1, h2, h3, h4, h5, h6, p {
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+form input {
+  margin: 40px;
+}
+
+/* homepage styling */
+
+div#home-main {
+  margin: auto;
+  margin-top: -5%;
+  text-align: center;
+  width: 60%;
+}
+
+.home-main-text {
+  color: white;
+  text-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
 /* header and footer */
 
 #footer, #footer_home {
@@ -79,17 +112,10 @@
   font:3em "Helvetica", sans-serif;
 }
 
-h2 {
-  color: black;
-  text-align: center;
-  margin-top: 20px;
-  font:2em "Helvetica", sans-serif;
-}
-
 div.card-input {
   text-align: center;
-  padding: 40px;
-  margin: 40px;
+  padding: 20px;
+  margin: 20px;
 }
 
 div.card-input h3 {
@@ -98,7 +124,7 @@ div.card-input h3 {
 }
 
 div.card-input form input[type=submit] {
-  font:1.5em "Helvetica", sans-serif;
+  font:1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:lighter;
   line-height: 1.8;
   display: inline-block;
