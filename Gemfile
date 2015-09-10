@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pg',             '0.18.1'
+gem 'typekit-rails'
 
 group :development, :test do
   gem 'sqlite3'

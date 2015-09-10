@@ -1,20 +1,30 @@
 /* basic element syling */
 
 h1, h2, h3, h4, h5, h6, p {
-  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
+  font-size: 16px;
 }
 
 h1 {
+  font-family: "english-small-caps",serif;
   font-size: 4em;
 }
 
 h3 {
-  font-size: 2em;
+  font-family: "fira-sans-2",sans-serif;
+  font-variant-numeric: oldstyle-nums;
+  font-size: 1.75em;
 }
 
 form input {
   margin: 40px;
+}
+
+.oldnum {
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: "onum";
+  -ms-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
 }
 
 /* homepage styling */
@@ -34,7 +44,7 @@ div#home-main {
   width: 60%;
 }
 
-.home-main-text {
+.home-main-text-english, .home-main-text-body {
   color: white;
   text-shadow: 0 2px 3px rgba(0,0,0,.4);
 }
@@ -64,7 +74,7 @@ div#home-main {
 
 .git-link {
   color: white;
-  font: 1em "Helvetica", sans-serif;
+  font-size: 1em;
   text-decoration: none;
 }
 
@@ -102,7 +112,7 @@ div#home-main {
   text-align:center;
   color:white;
   text-decoration:none;
-  font:normal 1em "Helvetica", sans-serif;
+  font-size: 1em;
   text-transform:uppercase;
   letter-spacing:1px;
 }
@@ -117,7 +127,7 @@ div#home-main {
   color: black;
   text-align: center;
   margin-top: 160px;
-  font:3em "Helvetica", sans-serif;
+  font-size: 3em;
 }
 
 div.card-input {
@@ -128,11 +138,11 @@ div.card-input {
 
 div.card-input h3 {
   color: white;
-  font:2em "Helvetica", sans-serif;
+  font-size:2em;
 }
 
 div.card-input form input[type=submit] {
-  font:1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
   font-weight:lighter;
   line-height: 1.8;
   display: inline-block;
@@ -165,7 +175,7 @@ div.card-input form input[type=text] {
   display: inline-block;
   padding: 0px 45px;
   height: 50px;
-  font:1.5em "Helvetica", sans-serif;
+  font-size: 1.5em;
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
@@ -181,11 +191,11 @@ div.card-input form input[type=text] {
   width: 310px;
 }
 
-input::-webkit-input-placeholder {
+input:-webkit-input-placeholder {
 	color: rgba(56, 56, 56, .5);
 }
 
-input::-moz-placeholder {
+input:-moz-placeholder {
 	color: rgba(56, 56, 56, .5);
 }
 input:-moz-placeholder {
@@ -199,7 +209,7 @@ div.card-input form select,
 div.card-input form select option {
   display: inline-block;
   height: 50px;
-  font:1em "Helvetica", sans-serif;
+  font-size: 1em;
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
@@ -224,7 +234,7 @@ div.card-input form select option {
 table {
   color: black;
   text-align: center;
-  font:1em "Helvetica", sans-serif;
+  font-size: 1em;
   width:80%;
   margin: 0% 10% 10% 10%;
   border-collapse: collapse;
@@ -242,7 +252,7 @@ tbody tr:nth-child(odd) {
 /* search filter */
 
 input[type="search"] {
-  font:1em "Helvetica", sans-serif;
+  font-size: 1em;
   margin: 0 0 10px 0;
   padding: 10px;
 	width: 80%;

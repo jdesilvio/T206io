@@ -150,6 +150,7 @@ GEM
     tilt (1.4.1)
     turbolinks (2.5.3)
       coffee-rails
+    typekit-rails (0.0.3)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
@@ -178,5 +179,9 @@ DEPENDENCIES
   spring
   sqlite3
   turbolinks
+  typekit-rails
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+
+BUNDLED WITH
+   1.10.6
