@@ -19,6 +19,14 @@ form input {
 
 /* homepage styling */
 
+body#home {
+  background: asset-data-url('t206bg.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 div#home-main {
   margin: auto;
   margin-top: -5%;
@@ -250,14 +258,4 @@ input[type="search"]:focus {
 
 div.filter {
   text-align: center;
-}
-
-/* background image */
-
-body#home {
-  background: asset-data-url('t206bg.jpeg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
