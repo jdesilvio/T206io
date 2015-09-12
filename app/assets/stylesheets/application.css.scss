@@ -11,58 +11,58 @@ $fallback-body: sans-serif;
 
   h1 {
     font-family: $font-header;
-    font-size: 8em;
+    font-size: 6em;
   }
 
   h2 {
-    font-size: 5em;
+    font-size: 3.75em;
   }
 
   h3 {
-    font-size: 3.5em;
+    font-size: 2.625em;
   }
 
   h4 {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   h5 {
-    font-size: 2.5em;
+    font-size: 1.875em;
   }
 
   h6 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   div.card-input form input[type=submit] {
     font-family:$fallback-body;
-    font-size: 3em;
+    font-size: 2.25em;
   }
 
   div.card-input form select,
   div.card-input form select option {
     font-family:$fallback-body;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   input[type="search"] {
     font-family:$fallback-body;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   table {
     font-family:$fallback-body;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   th, td {
     font-family:$fallback-body;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .navbar-right a {
     font-family:$fallback-body;
-    font-size: 3em;
+    font-size: 1.5em;
   }
 }
 
@@ -125,7 +125,7 @@ $fallback-body: sans-serif;
 
   .navbar-right a {
     font-family:$font-body;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
@@ -270,8 +270,8 @@ div.card-input form input[type=submit] {
   font-weight: 100;
   line-height: 1.8;
   display: inline-block;
-  width: 200px;
-  padding: 5px;
+  width: auto;
+  padding: 5px 20px;
   background: Transparent;
   color: #fff;
   border: 1.5px solid #fff;
@@ -311,7 +311,8 @@ div.card-input form select option {
   border: none;
   position: relative;
   margin:0 auto;
-  width: 400px;
+  width: auto;
+  padding: 0px 40px;
 }
 
 .button-span {
