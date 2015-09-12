@@ -11,7 +11,7 @@ $fallback-body: sans-serif;
   }
   div.card-input form input[type=submit] {
     font-family:$fallback-body;
-    font-size: 2em;
+    font-size: 3em;
   }
   div.card-input form select,
   div.card-input form select option {
@@ -30,11 +30,40 @@ $fallback-body: sans-serif;
     font-family:$fallback-body;
     font-size: 2em;
   }
+  .navbar-right a {
+    font-family:$fallback-body;
+    font-size: 4em;
+  }
 }
 
 @media (min-device-width: 768px) {
   h1, h2, h3, h4, h5, h6 {
     font-family:$font-body;
+  }
+  div.card-input form input[type=submit] {
+    font-family:$font-body;
+    font-size: 1.5em;
+  }
+  div.card-input form select,
+  div.card-input form select option {
+    font-family:$font-body;
+    font-size: 1em;
+  }
+  input[type="search"] {
+    font-family:$font-body;
+    font-size: 1em;
+  }
+  table {
+    font-family:$font-body;
+    font-size: 1em;
+  }
+  th, td {
+    font-family:$font-body;
+    font-size: 1em;
+  }
+  .navbar-right a {
+    font-family:$font-body;
+    font-size: 1.5em;
   }
 }
 
@@ -169,11 +198,9 @@ div#home-main {
 }
 
 .navbar-right a {
-  font-family:$font-body;
   text-align:center;
   color:white;
   text-decoration:none;
-  font-size: 1em;
   text-transform:uppercase;
   letter-spacing:1px;
 }
@@ -203,8 +230,6 @@ div.card-input h3 {
 }
 
 div.card-input form input[type=submit] {
-  font-family:$font-body;
-  font-size: 1.5em;
   font-weight: 100;
   line-height: 1.8;
   display: inline-block;
@@ -235,11 +260,9 @@ div.card-input form input[type=submit]:active{
 
 div.card-input form select,
 div.card-input form select option {
-  font-family:$font-body;
   text-align: center;
   display: inline-block;
   height: 50px;
-  font-size: 1em;
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
@@ -261,10 +284,8 @@ div.card-input form select option {
 /* table */
 
 table {
-  font-family:$font-body;
   color: black;
   text-align: center;
-  font-size: 1em;
   width:80%;
   margin: 0% 10% 10% 10%;
   border-collapse: collapse;
@@ -275,7 +296,6 @@ table {
 }
 
 th, td {
-  font-family:$font-body;
   border: 1px solid #CCCCCC;
   padding: 10px;
 }
@@ -287,8 +307,6 @@ tbody tr:nth-child(odd) {
 /* search filter */
 
 input[type="search"] {
-  font-family:$font-body;
-  font-size: 1em;
   margin: 0 0 10px 0;
   padding: 10px;
 	width: 80%;
