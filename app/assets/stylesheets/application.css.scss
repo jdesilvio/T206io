@@ -1,18 +1,57 @@
+/* Sass variables */
+
+$font-header: "english-small-caps",serif;
+$font-body: "lato",sans-serif;
+$fallback-body: sans-serif;
+
+@media (min-width: 0px) and (max-width: 767px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-family:$fallback-body;
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-family:$font-body;
+  }
+}
+
 /* basic element syling */
 
-h1, h2, h3, h4, h5, h6, p {
+p, a {
+  font-family:$font-body;
   font-size: 16px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-variant-numeric: oldstyle-nums;
+  font-weight: 100;
+}
+
 h1 {
-  font-family: "english-small-caps",serif;
+  font-family: $font-header;
   font-size: 4em;
 }
 
+h2 {
+  font-size: 2.5em;
+}
+
 h3 {
-  font-family: "fira-sans-2",sans-serif;
-  font-variant-numeric: oldstyle-nums;
   font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
 }
 
 form input {
@@ -44,7 +83,7 @@ div#home-main {
   width: 60%;
 }
 
-.home-main-text-english, .home-main-text-body {
+.home-text {
   color: white;
   text-shadow: 0 2px 3px rgba(0,0,0,.4);
 }
@@ -109,6 +148,7 @@ div#home-main {
 }
 
 .navbar-right a {
+  font-family:$font-body;
   text-align:center;
   color:white;
   text-decoration:none;
@@ -142,8 +182,9 @@ div.card-input h3 {
 }
 
 div.card-input form input[type=submit] {
+  font-family:$font-body;
   font-size: 1.5em;
-  font-weight:lighter;
+  font-weight: 100;
   line-height: 1.8;
   display: inline-block;
   width: 200px;
@@ -171,42 +212,10 @@ div.card-input form input[type=submit]:active{
               color 0.3s ease-in;
 }
 
-div.card-input form input[type=text] {
-  display: inline-block;
-  padding: 0px 45px;
-  height: 50px;
-  font-size: 1.5em;
-  line-height: 1.8;
-  appearance: none;
-  box-shadow: none;
-  -webkit-border-radius: 5;
-  -moz-border-radius: 5;
-  border-radius: 5px;
-  color: black;
-  background: rgba(255, 255, 255, .5);
-  border: none;
-  position: relative;
-  margin:0 auto;
-  text-align: center;
-  width: 310px;
-}
-
-input:-webkit-input-placeholder {
-	color: rgba(56, 56, 56, .5);
-}
-
-input:-moz-placeholder {
-	color: rgba(56, 56, 56, .5);
-}
-input:-moz-placeholder {
-	color: rgba(56, 56, 56, .5);
-}
-input:-ms-input-placeholder {
-	color: rgba(56, 56, 56, .5);
-}
-
 div.card-input form select,
 div.card-input form select option {
+  font-family:$font-body;
+  text-align: center;
   display: inline-block;
   height: 50px;
   font-size: 1em;
@@ -221,7 +230,6 @@ div.card-input form select option {
   border: none;
   position: relative;
   margin:0 auto;
-  text-align: center;
   width: 400px;
 }
 
@@ -232,6 +240,7 @@ div.card-input form select option {
 /* table */
 
 table {
+  font-family:$font-body;
   color: black;
   text-align: center;
   font-size: 1em;
@@ -240,7 +249,12 @@ table {
   border-collapse: collapse;
 }
 
+.table-title {
+  text-align: center;
+}
+
 th, td {
+  font-family:$font-body;
   border: 1px solid #CCCCCC;
   padding: 10px;
 }
@@ -252,6 +266,7 @@ tbody tr:nth-child(odd) {
 /* search filter */
 
 input[type="search"] {
+  font-family:$font-body;
   font-size: 1em;
   margin: 0 0 10px 0;
   padding: 10px;
