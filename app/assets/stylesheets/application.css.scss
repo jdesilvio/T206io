@@ -4,7 +4,7 @@ $font-header: "english-small-caps",serif;
 $font-body: "lato",sans-serif;
 $fallback-body: sans-serif;
 
-@media (min-device-width: 0px) and (max-width: 767px) {
+@media (min-device-width: 0px) and (max-device-width: 767px) {
   h1, h2, h3, h4, h5, h6 {
     font-family:$fallback-body;
     font-size: 1.5em;
