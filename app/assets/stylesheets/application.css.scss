@@ -5,62 +5,124 @@ $font-body: "lato",sans-serif;
 $fallback-body: sans-serif;
 
 @media (min-device-width: 0px) and (max-device-width: 767px) {
-  h1, h2, h3, h4, h5, h6 {
+  h2, h3, h4, h5, h6 {
     font-family:$fallback-body;
+  }
+
+  h1 {
+    font-family: $font-header;
+    font-size: 8em;
+  }
+
+  h2 {
+    font-size: 5em;
+  }
+
+  h3 {
+    font-size: 3.5em;
+  }
+
+  h4 {
+    font-size: 3em;
+  }
+
+  h5 {
+    font-size: 2.5em;
+  }
+
+  h6 {
     font-size: 2em;
   }
+
   div.card-input form input[type=submit] {
     font-family:$fallback-body;
     font-size: 3em;
   }
+
   div.card-input form select,
   div.card-input form select option {
     font-family:$fallback-body;
     font-size: 2em;
   }
+
   input[type="search"] {
     font-family:$fallback-body;
     font-size: 2em;
   }
+
   table {
     font-family:$fallback-body;
     font-size: 2em;
   }
+
   th, td {
     font-family:$fallback-body;
     font-size: 2em;
   }
+
   .navbar-right a {
     font-family:$fallback-body;
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 
 @media (min-device-width: 768px) {
   h1, h2, h3, h4, h5, h6 {
     font-family:$font-body;
+    font-weight: 100;
   }
+
+  h1 {
+    font-family: $font-header;
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 1.25em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
   div.card-input form input[type=submit] {
     font-family:$font-body;
     font-size: 1.5em;
   }
+
   div.card-input form select,
   div.card-input form select option {
     font-family:$font-body;
     font-size: 1em;
   }
+
   input[type="search"] {
     font-family:$font-body;
     font-size: 1em;
   }
+
   table {
     font-family:$font-body;
     font-size: 1em;
   }
+
   th, td {
     font-family:$font-body;
     font-size: 1em;
   }
+
   .navbar-right a {
     font-family:$font-body;
     font-size: 1.5em;
@@ -71,37 +133,12 @@ $fallback-body: sans-serif;
 
 p, a {
   font-family:$font-body;
+  font-variant-numeric: oldstyle-nums;
   font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-variant-numeric: oldstyle-nums;
-  font-weight: 100;
-}
-
-h1 {
-  font-family: $font-header;
-  font-size: 4em;
-}
-
-h2 {
-  font-size: 2.5em;
-}
-
-h3 {
-  font-size: 1.75em;
-}
-
-h4 {
-  font-size: 1.5em;
-}
-
-h5 {
-  font-size: 1.25em;
-}
-
-h6 {
-  font-size: 1em;
 }
 
 form input {
