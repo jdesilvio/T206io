@@ -7,7 +7,28 @@ $fallback-body: sans-serif;
 @media (min-device-width: 0px) and (max-device-width: 767px) {
   h1, h2, h3, h4, h5, h6 {
     font-family:$fallback-body;
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+  div.card-input form input[type=submit] {
+    font-family:$fallback-body;
+    font-size: 2em;
+  }
+  div.card-input form select,
+  div.card-input form select option {
+    font-family:$fallback-body;
+    font-size: 2em;
+  }
+  input[type="search"] {
+    font-family:$fallback-body;
+    font-size: 2em;
+  }
+  table {
+    font-family:$fallback-body;
+    font-size: 2em;
+  }
+  th, td {
+    font-family:$fallback-body;
+    font-size: 2em;
   }
 }
 
