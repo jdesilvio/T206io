@@ -67,7 +67,7 @@ $fallback-body: sans-serif;
 }
 
 @media (min-device-width: 768px) {
-  h1, h2, h3, h4, h5, h6 {
+  h2, h3, h4, h5, h6 {
     font-family:$font-body;
     font-weight: 100;
   }
@@ -131,6 +131,11 @@ $fallback-body: sans-serif;
 
 /* basic element syling */
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 p, a {
   font-family:$font-body;
   font-variant-numeric: oldstyle-nums;
@@ -177,7 +182,7 @@ div#home-main {
 
 /* header and footer */
 
-#footer, #footer_home {
+#footer_home {
   height: 30px;
   line-height: 30px;
   float: left;
@@ -190,6 +195,18 @@ div#home-main {
 
 #footer {
   background: #2E2E2E;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  overflow:hidden;
+  margin: 0;
+	padding: 25px 0px;
+	width: 100%;
+  box-shadow: 0 -2px 3px rgba(0,0,0,.4);
+}
+
+#footer small {
+  padding: 0px 25px;
 }
 
 #footer_home {

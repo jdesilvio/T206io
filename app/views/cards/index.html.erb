@@ -1,11 +1,11 @@
 <div>
-  <h1 class="top-header"><%= @card.card_name.split.map(&:capitalize).join(' ') %> - Card Information</h1>
+  <h2 class="top-header"><%= @card.card_name.split.map(&:capitalize).join(' ') %> - Card Information</h2>
 </div>
 
 </br>
 
 <div>
-  <h2 class="table-title tk-lato">Card Back Summary</h1>
+  <h3 class="table-title tk-lato">Card Back Summary</h3>
 
   <table class="order-table tk-lato">
     <thead>
@@ -29,7 +29,7 @@
     </tbody>
   </table>
 
-  <h2 class="table-title tk-lato">Card Grade Summary</h1>
+  <h3 class="table-title tk-lato">Card Grade Summary</h3>
 
   <table class="order-table tk-lato">
     <thead>
@@ -53,7 +53,7 @@
     </tbody>
   </table>
 
-  <h2 class="table-title tk-lato">Card Details</h1>
+  <h3 class="table-title tk-lato">Card Details</h3>
 
   <div class = "filter tk-lato">
     <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter"/>
