@@ -1,5 +1,13 @@
 <body id="home">
-  <%= image_tag("logo.png", alt: "Logo") %>
+  <div>
+    <%= image_tag("logo.png", alt: "Logo") %>
+    <% if user_signed_in? %>
+      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %><br>
+    <% else %>
+      <%= link_to "Sign In", new_user_session_path %><br>
+      <%= link_to "Sign Up", new_user_registration_path %><br>
+    <% end %>
+  </div>
   <div>
     <div id="home-main">
       <h1 class="home-text header-text oldnum">The T206 Project</h1>
