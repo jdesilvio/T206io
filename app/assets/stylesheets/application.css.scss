@@ -240,6 +240,20 @@ div#home-main {
   height: 70px;
 }
 
+.home-nav {
+  height: 70px;
+  padding: 0 8px 140px 8px;
+}
+
+.nav-main {
+  width: auto;
+  float: left;
+  line-height: 24px;
+  padding-right: 8px;
+  border-right: 2px solid #AAA;
+  margin-right: -1px;
+}
+
 .navbar-right {
   margin:0;
   right: 12.5%;
@@ -260,8 +274,35 @@ div#home-main {
 }
 
 .navbar-right a:hover {
+  color: #CCC;
+}
+
+.user-actions {
+    width: auto;
+    float:right;
+    padding: 0 4px 0 4px;
+    display: inline;
+    line-height: 24px;
+}
+
+.user-actions a {
+  font-size: .75em;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  padding: 0 4px 0 4px;
+}
+
+.user-actions a:hover {
   color: #ccc;
 }
+
+.sign-up-button {
+  float: right;
+}
+
 
 /* */
 
