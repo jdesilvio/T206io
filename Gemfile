@@ -19,6 +19,7 @@ group :development, :test do
   gem 'spring'
   gem 'rails_12factor'
   gem 'capistrano-rails', '~> 1.1.1'
+  gem "figaro"
 end
 
 group :production do
