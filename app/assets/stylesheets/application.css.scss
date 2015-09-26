@@ -161,6 +161,14 @@ a:hover {
   color: #CCC;
 }
 
+.devise-links a {
+  color: #333;
+}
+
+.devise-links a:hover {
+  text-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-variant-numeric: oldstyle-nums;
   margin: 12px 0;
@@ -176,10 +184,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* homepage styling */
 
-body#home,
+body#home {
+  background: asset-data-url('t206bg.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body#sign-up,
 body#sign-in {
-  background: asset-data-url('t206bg.jpeg') no-repeat center center fixed;
+  background: asset-data-url('bench.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -387,7 +402,7 @@ form input[type=submit] {
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
   padding: 0px 20px;
   margin: 32px auto;
-  background: Transparent;
+  background-color: rgba(78, 97, 114, 0.5);
   color: #fff;
   border: 1.5px solid #fff;
   border-radius: 5px;
@@ -399,18 +414,12 @@ form input[type=submit] {
               color 0.5s ease-in;
 }
 
-form input[type=submit]:hover,
-form input[type=submit]:active{
-  background-color: #fff; /* fallback */
-  background-color: rgba(255, 255, 255, 0.4);
+form input[type=submit]:hover {
+  background-color: rgba(163, 173, 184, 0.5);
   border-color: #fff; /* fallback */
   transition: background-color 0.3s ease-in,
               border-color 0.3s ease-in,
               color 0.3s ease-in;
-}
-
-.container-form form input[type=submit] {
-  background-color: rgba(0, 0, 0, .5);
 }
 
 label[for=user_remember_me] {
@@ -424,6 +433,7 @@ label[for=user_remember_me] {
 
 .remember-me {
   display: flex;
+  color: #FFFFF;
 }
 
 form select,
@@ -449,7 +459,7 @@ form select option {
 .container-fields {
   border: 2px solid #fff;
   border-radius: 25px;
-  background: rgba(255, 255, 255, .5);
+  background: rgba(0, 0, 0, .5);
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
   width: 60%;
   padding: 20px;
