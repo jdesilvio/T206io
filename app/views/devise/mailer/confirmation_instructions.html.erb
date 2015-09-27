@@ -1,5 +1,5 @@
-<p>Welcome <%= @email %>!</p>
+<p>Welcome <%= @email %>, to The T206 Project!</p>
 
-<p>You can confirm your account email through the link below:</p>
+<p>I hope you enjoy experiencing the T206 baseball card set in a whole new way! You can confirm your account email through the link below:</p>
 
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
