@@ -176,6 +176,10 @@ a:hover {
   color: $light-blue-grey;
 }
 
+.light-text {
+  color: $white;
+}
+
 .devise-links a {
   color: $dark-grey;
 }
@@ -484,8 +488,6 @@ form select option {
 }
 
 .container-fields {
-  border: 2px solid $white;
-  border-radius: 25px;
   background: rgba(0, 0, 0, .5);
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
   width: 60%;
