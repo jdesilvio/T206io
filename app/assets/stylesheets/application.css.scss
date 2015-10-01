@@ -73,7 +73,7 @@ $dark-blue-grey: #4E6172;
     font-size: 1.5em;
   }
 
-  th, td {
+  th, td, ul, li {
     font-family:$fallback-body;
     font-size: 1.5em;
   }
@@ -141,7 +141,7 @@ $dark-blue-grey: #4E6172;
     font-size: 1em;
   }
 
-  th, td {
+  th, td, ul, li {
     font-family:$font-body;
     font-size: 1em;
   }
@@ -224,7 +224,10 @@ body#home {
 }
 
 body#sign-up,
-body#sign-in {
+body#sign-in,
+body#resend-confirmation,
+body#change-password,
+body#forgot-password {
   background: asset-data-url('bench.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -433,7 +436,7 @@ form input[type=submit] {
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
   padding: 0px 20px;
   margin: 32px auto;
-  background-color: rgba(78, 97, 114, 0.5);
+  background-color: rgba(78, 97, 114, 1);
   color: $white;
   border: 1.5px solid $white;
   border-radius: 5px;
@@ -493,6 +496,7 @@ form select option {
   width: 60%;
   padding: 20px;
   margin: 12px 20%;
+  z-index: -2;
 }
 
 .container-form {
@@ -558,4 +562,38 @@ input[type="search"]:focus {
 
 div.filter {
   text-align: center;
+}
+
+/* Devise error styling ********************************************/
+
+#error_explanation {
+  display: inline-block;
+  width: 80%;
+  padding: 16px;
+  margin: 16px;
+  background-color:$dark-blue-grey;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+#error_explanation h2 {
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  margin: 0px;
+  font-size: 16px;
+  color: $white;
+}
+
+#error_explanation p {
+  color: $white;
+  padding: 8px;
+}
+
+#error_explanation ul li {
+  color: $white;
+  font-size: 14px;
+  list-style: none;
+  list-style-position: inside;
+  margin-left: -40px;
 }
