@@ -215,19 +215,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* homepage styling */
 
-body#home {
-  background: asset-data-url('t206bg.jpeg') no-repeat center center fixed;
+body#cards-new {
+  background: asset-data-url('t206bg.jpeg');
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-body#sign-up,
-body#sign-in,
-body#resend-confirmation,
-body#change-password,
-body#forgot-password {
+body#devise_sessions-new,
+body#devise_registrations-new,
+body#devise_confirmations-new,
+body#devise_passwords-edit,
+body#devise_passwords-new {
   background: asset-data-url('bench.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

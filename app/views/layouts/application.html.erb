@@ -8,7 +8,7 @@
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
 </head>
-<body>
+<body id="<%= page_id %>">
   <div class="wrapper">
 
     <% if current_page?(root_path) %>
