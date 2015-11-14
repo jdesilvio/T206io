@@ -1,14 +1,10 @@
 Rails.application.routes.draw do
 
-  #get 'static_pages/index'
-  #get 'static_pages/landing'
   get 'static_pages/about'
   get 'static_pages/contribute'
 
   devise_for :users
   resources :cards
-
-  #root :to => 'static_pages#landing'
 
   authenticated :user do
     root 'static_pages#index', :as => "authenticated_root"

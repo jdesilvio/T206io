@@ -3,6 +3,8 @@
   <nav class="navbar-right">
     <div class="nav-main">
       <%= link_to "Home", '/' %>
+      <%= link_to "About", static_pages_about_path %>
+      <%= link_to "Contribute", static_pages_contribute_path %>
     </div>
     <div class="user-actions">
       <% if user_signed_in? %>
