@@ -1,19 +1,21 @@
 Rails.application.routes.draw do
 
-  get 'static_pages/index'
-
-  get 'static_pages/landing'
-
+  #get 'static_pages/index'
+  #get 'static_pages/landing'
   get 'static_pages/about'
-
   get 'static_pages/contribute'
 
   devise_for :users
   resources :cards
-  root :to => 'cards#new'
 
-  unauthenticated do
-    root to: 'cards#new', :as => 'unauthenticated'
+  #root :to => 'static_pages#landing'
+
+  authenticated :user do
+    root 'static_pages#index', :as => "authenticated_root"
+  end
+
+  unauthenticated :user do
+    root 'static_pages#landing', :as => "unauthenticated_root"
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
