@@ -11,17 +11,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pg',             '0.18.1'
 gem 'typekit-rails'
 gem 'devise'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'rails_12factor'
   gem 'capistrano-rails', '~> 1.1.1'
-  gem "figaro"
+  gem 'figaro'
+  gem 'thin'
 end
 
 group :production do
-  gem 'rails_12factor'
+
 end
