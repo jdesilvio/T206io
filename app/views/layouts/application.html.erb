@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <%= typekit 'fsf0hpq' %>
-  <title>The T206 Project</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <%= render 'layouts/shim' %>
-</head>
-<body id="<%= page_id %>">
-  <div class="wrapper">
+  <head>
+    <%= typekit 'fsf0hpq' %>
+    <title>The T206 Project</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
+  </head>
+  <body id="<%= page_id %>">
+    <div class="wrapper">
 
-    <% if current_page?(authenticated_root_path) ||
-          current_page?(unauthenticated_root_path) ||
-          current_page?('/static_pages/landing') ||
-          current_page?('/static_pages/index') %>
-    <% else %>
-      <%= render 'layouts/header' %>
-    <% end %>
+      <% if current_page?(authenticated_root_path) ||
+            current_page?(unauthenticated_root_path) ||
+            current_page?('/static_pages/landing') ||
+            current_page?('/static_pages/index') %>
+      <% else %>
+        <%= render 'layouts/header' %>
+      <% end %>
 
-    <div class="flash-fade">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <div class="flash-fade">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
+
+      <%= yield %>
+
+      <% if current_page?(authenticated_root_path) ||
+            current_page?(unauthenticated_root_path) ||
+            current_page?('/static_pages/landing') ||
+            current_page?('/static_pages/index') %>
+        <%= render 'layouts/footer_home' %>
+      <% else %>
+        <%= render 'layouts/footer' %>
+      <% end %>
     </div>
-
-    <%= yield %>
-
-    <% if current_page?(authenticated_root_path) ||
-          current_page?(unauthenticated_root_path) ||
-          current_page?('/static_pages/landing') ||
-          current_page?('/static_pages/index') %>
-      <%= render 'layouts/footer_home' %>
-    <% else %>
-      <%= render 'layouts/footer' %>
-    <% end %>
-  </div>
-</body>
+  </body>
 </html>
