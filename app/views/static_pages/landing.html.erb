@@ -1,20 +1,18 @@
-<div class="home-nav">
-  <%= image_tag("logo.png", alt: "Logo") %>
-  <div class="navbar-right user-actions">
-    <% if user_signed_in? %>
-      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Sign In", new_user_session_path %>
-      <div class="sign-up-button">
-        <%= link_to "Sign Up", new_user_registration_path %>
-      </div>
-    <% end %>
-  </div>
-</div>
-<div>
-  <div id="home-main">
-    <h1 class="home-text header-text oldnum">The T206 Project</h1>
-    <h3 class="home-text body-text oldnum">Experience the legendary T206 baseball card set</h3>
-    <p>LANDING</p>
+<div class="wrapper-page">
+  <div>
+    <div id="home-main">
+      <h1 class="home-text header-text oldnum">The T206 Project</h1>
+      <h3 class="home-text body-text oldnum">Experience the legendary T206 baseball card set</h3>
+      <a href="users/sign_up">
+        <div class="light-button">
+          <p>Become a member - It's FREE!</p>
+        </div>
+      </a>
+      <a href="users/sign_in">
+        <div class="ghost-button">
+          <p>Already a member? Sign In</p>
+        </div>
+      </a>
+    </div>
   </div>
 </div>

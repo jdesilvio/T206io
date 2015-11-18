@@ -47,7 +47,9 @@ $dark-blue-grey: #4E6172;
     font-size: 1.5em;
   }
 
-  form input[type=submit] {
+  form input[type=submit],
+  .ghost-button p,
+  .light-button p {
     font-family:$fallback-body;
     font-size: 2.25em;
   }
@@ -115,7 +117,9 @@ $dark-blue-grey: #4E6172;
     font-size: 1em;
   }
 
-  form input[type=submit] {
+  form input[type=submit],
+  .ghost-button p,
+  .light-button p {
     font-family:$font-body;
     font-size: 1.5em;
   }
@@ -213,6 +217,46 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .7;
 }
 
+div.wrapper-page {
+  margin: auto 0;
+  padding: 200px 20px;
+}
+
+.ghost-button,
+.light-button {
+  font-weight: 100;
+  width: 400px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+  padding: 0px 20px;
+  margin: 32px auto;
+  color: $white;
+  border: 1.5px solid $white;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out,
+              border-color 0.5s ease-out,
+              color 0.5s ease-in;
+}
+
+.light-button {
+  background-color: rgba(78, 97, 114, 1);
+}
+
+.ghost-button:hover,
+.light-button:hover {
+  background-color: rgba(163, 173, 184, 0.5);
+  border-color: $white; /* fallback */
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+.light-button:hover {
+  background-color: rgba(163, 173, 184, 0.5);
+}
+
 /* homepage styling */
 
 body#cards-new,
@@ -241,7 +285,7 @@ div#home-main {
   margin: auto;
   margin-top: -5%;
   text-align: center;
-  width: 60%;
+  width: auto;
 }
 
 .home-text {
@@ -260,6 +304,7 @@ div#home-main {
   margin: 0% -8px;
   box-shadow: 0 -2px 3px rgba(0,0,0,.4);
   position: fixed;
+  bottom: 0;
 }
 
 #footer {
@@ -272,7 +317,8 @@ div#home-main {
 	padding: 25px 0px;
 	width: 100%;
   box-shadow: 0 -2px 3px rgba(0,0,0,.4);
-  position: absolute;
+  position: fixed;
+  bottom: 0;
 }
 
 #footer small {
@@ -282,7 +328,7 @@ div#home-main {
 #footer_home {
   background: $black;
   opacity: .4;
-  position: absolute;
+  position: fixed;
 }
 
 .git-link {
@@ -297,13 +343,11 @@ div#home-main {
 
 #header {
   height: 70px;
-  background: $grey;
 	min-width: 100%;
   position: fixed;
   margin: 0% -8px;
 	padding: 25px;
   top: 0%;
-  box-shadow: 0 2px 3px rgba(0,0,0,.4);
 }
 
 #header-logo {
@@ -336,12 +380,17 @@ div#home-main {
 }
 
 .navbar-right a {
+  color: $dark-grey;
   text-align:center;
-  color:$white;
   text-decoration:none;
   text-transform:uppercase;
   letter-spacing:1px;
   padding: 0 4px;
+}
+
+#static_pages-landing .navbar-right a,
+#static_pages-index .navbar-right a {
+  color: $white;
 }
 
 .navbar-right a:hover {
@@ -359,11 +408,16 @@ div#home-main {
 .user-actions a {
   font-size: .75em;
   text-align:center;
-  color:$white;
+  color: $dark-grey;
   text-decoration:none;
   text-transform:uppercase;
   letter-spacing:1px;
   padding: 0 4px 0 4px;
+}
+
+#static_pages-landing .user-actions a,
+#static_pages-index .user-actions a {
+  color: $white;
 }
 
 .user-actions a:hover {
@@ -374,7 +428,7 @@ div#home-main {
   float: right;
 }
 
-/* Statpage styling */
+/* Static page styling */
 
 div.static-page-wrapper {
   margin: 20px;
@@ -500,12 +554,17 @@ form select option {
   padding: 0px 40px;
 }
 
-.container-fields {
+.container-fields,
+.panel {
   background: rgba(0, 0, 0, .5);
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
   width: 60%;
   padding: 20px;
-  margin: 12px 20%;
+  margin: auto;
+}
+
+.panel-text-light {
+  color: $light-grey;
 }
 
 .container-form {

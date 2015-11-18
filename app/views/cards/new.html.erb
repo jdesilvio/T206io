@@ -13,14 +13,15 @@
 </div>
 <div>
   <div id="home-main">
-    <h1 class="home-text header-text oldnum">The T206 Project</h1>
-    <h3 class="home-text body-text oldnum">Experience the legendary T206 baseball card set</h3>
+    <h1 class="home-text header-text oldnum">Explore the Cards</h1>
   </div>
-  <div class="card-input body-text oldnum">
-    <%= form_for @card do |f| %>
-      <%= f.select :card_name, options_from_collection_for_select(Psa_pop.select(:psa_card).distinct.order(:psa_card), :psa_card, :psa_card, ) %>
-      </br>
-      <%= f.submit "Card Details"%>
-    <% end %>
+  <div class="panel">
+    <div class="card-input body-text oldnum">
+      <%= form_for @card do |f| %>
+        <%= f.select :card_name, options_from_collection_for_select(Psa_pop.select(:psa_card).distinct.order(:psa_card), :psa_card, :psa_card, ) %>
+        </br>
+        <%= f.submit "Card Details"%>
+      <% end %>
+    </div>
   </div>
 </div>

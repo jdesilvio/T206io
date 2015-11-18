@@ -1,20 +1,10 @@
-<div class="home-nav">
-  <%= image_tag("logo.png", alt: "Logo") %>
-  <div class="navbar-right user-actions">
-    <% if user_signed_in? %>
-      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Sign In", new_user_session_path %>
-      <div class="sign-up-button">
-        <%= link_to "Sign Up", new_user_registration_path %>
-      </div>
-    <% end %>
-  </div>
-</div>
-<div>
+<div class="wrapper-page">
   <div id="home-main">
-    <h1 class="home-text header-text oldnum">The T206 Project</h1>
-    <h3 class="home-text body-text oldnum">Experience the legendary T206 baseball card set</h3>
-    <p>INDEX</p>
+    <h1 class="home-text header-text oldnum">Explore the T206 Set</h1>
+    <a href="cards/new">
+      <div class="panel">
+        <h2 class="panel-text-light">Explore the Cards</h2>
+      </div>
+    </a>
   </div>
 </div>
