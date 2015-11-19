@@ -1,19 +1,6 @@
-<div class="home-nav">
-  <%= image_tag("logo.png", alt: "Logo") %>
-  <div class="navbar-right user-actions">
-    <% if user_signed_in? %>
-      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Sign In", new_user_session_path %>
-      <div class="sign-up-button">
-        <%= link_to "Sign Up", new_user_registration_path %>
-      </div>
-    <% end %>
-  </div>
-</div>
-<div>
+<div class="wrapper-page">
   <div id="home-main">
-    <h1 class="home-text header-text oldnum">Explore the Cards</h1>
+    <h1 class="home-text header-text oldnum styled-text">Explore the Cards</h1>
   </div>
   <div class="panel">
     <div class="card-input body-text oldnum">

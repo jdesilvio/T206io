@@ -1,84 +1,86 @@
-<div>
-  <h2 class="top-header"><%= @card.card_name.split.map(&:capitalize).join(' ') %> - Card Information</h2>
-</div>
-
-</br>
-
-<div>
-  <h3 class="table-title tk-lato">Card Back Summary</h3>
-
-  <table class="order-table tk-lato">
-    <thead>
-      <th>Card Back</th>
-      <th>Population</th>
-      <th>Population %</th>
-    </thead>
-    <tbody>
-      <% @summary_backs.each_row do |row| %>
-        <tr>
-          <% row.each do |element| %>
-            <% if element.to_f < 1 && element.to_f > 0 %>
-              <% x = element.to_f * 100 %>
-              <td><%= x.round(2).to_s + "%" %></td>
-            <% else %>
-              <td><%= element %></td>
-            <% end %>
-          <% end %>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-
-  <h3 class="table-title tk-lato">Card Grade Summary</h3>
-
-  <table class="order-table tk-lato">
-    <thead>
-      <th>Card Grade</th>
-      <th>Population</th>
-      <th>Population %</th>
-    </thead>
-    <tbody>
-      <% @summary_grades.each_row do |row| %>
-        <tr>
-          <% row.each do |element| %>
-            <% if element.to_f < 1 && element.to_f > 0 %>
-              <% x = element.to_f * 100 %>
-              <td><%= x.round(2).to_s + "%" %></td>
-            <% else %>
-              <td><%= element %></td>
-            <% end %>
-          <% end %>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-
-  <h3 class="table-title tk-lato">Card Details</h3>
-
-  <div class = "filter tk-lato">
-    <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter"/>
+<div class="wrapper-page">
+  <div>
+    <h2 class="title styled-text"><%= @card.card_name.split.map(&:capitalize).join(' ') %> - Card Information</h2>
   </div>
 
-  <table class="order-table tk-lato">
-    <thead>
-      <th>Card Back</th>
-      <th>Grade</th>
-      <th>Population</th>
-      <th>Estimated Value</th>
-    </thead>
-    <tbody>
-      <% @info.each do |row| %>
-        <tr>
-          <% row.attributes.each do |key, value| %>
-            <% if key == 'psa_card' %>
-            <% elsif key == 'val' %>
-              <td><%= "#{number_to_currency(value)}" %></td>
-            <% else %>
-              <td><%= "#{value}" %></td>
+  </br>
+
+  <div>
+    <h3 class="table-title tk-lato">Card Back Summary</h3>
+
+    <table class="order-table tk-lato">
+      <thead>
+        <th>Card Back</th>
+        <th>Population</th>
+        <th>Population %</th>
+      </thead>
+      <tbody>
+        <% @summary_backs.each_row do |row| %>
+          <tr>
+            <% row.each do |element| %>
+              <% if element.to_f < 1 && element.to_f > 0 %>
+                <% x = element.to_f * 100 %>
+                <td><%= x.round(2).to_s + "%" %></td>
+              <% else %>
+                <td><%= element %></td>
+              <% end %>
             <% end %>
-          <% end %>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <h3 class="table-title tk-lato">Card Grade Summary</h3>
+
+    <table class="order-table tk-lato">
+      <thead>
+        <th>Card Grade</th>
+        <th>Population</th>
+        <th>Population %</th>
+      </thead>
+      <tbody>
+        <% @summary_grades.each_row do |row| %>
+          <tr>
+            <% row.each do |element| %>
+              <% if element.to_f < 1 && element.to_f > 0 %>
+                <% x = element.to_f * 100 %>
+                <td><%= x.round(2).to_s + "%" %></td>
+              <% else %>
+                <td><%= element %></td>
+              <% end %>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <h3 class="table-title tk-lato">Card Details</h3>
+
+    <div class = "filter tk-lato">
+      <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter"/>
+    </div>
+
+    <table class="order-table tk-lato">
+      <thead>
+        <th>Card Back</th>
+        <th>Grade</th>
+        <th>Population</th>
+        <th>Estimated Value</th>
+      </thead>
+      <tbody>
+        <% @info.each do |row| %>
+          <tr>
+            <% row.attributes.each do |key, value| %>
+              <% if key == 'psa_card' %>
+              <% elsif key == 'val' %>
+                <td><%= "#{number_to_currency(value)}" %></td>
+              <% else %>
+                <td><%= "#{value}" %></td>
+              <% end %>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 </div>
