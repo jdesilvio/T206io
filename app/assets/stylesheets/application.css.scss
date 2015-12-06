@@ -53,7 +53,8 @@ $dark-blue-grey: #4E6172;
 
   form input[type=submit],
   .ghost-button p,
-  .light-button p {
+  .light-button p,
+  #home-sign-in-link p {
     font-family:$fallback-body;
     font-size: 2.25em;
   }
@@ -125,7 +126,8 @@ $dark-blue-grey: #4E6172;
 
   form input[type=submit],
   .ghost-button p,
-  .light-button p {
+  .light-button p,
+  #home-sign-in-link p {
     font-family:$font-body;
     font-size: 1.5em;
   }
@@ -269,37 +271,37 @@ h1, h2, h3, h4, h5, h6 {
 
 .ghost-button,
 .light-button {
-  font-weight: 100;
   width: 400px;
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
   padding: 0px 20px;
   margin: 32px auto;
   color: $white;
-  border: 1.5px solid $white;
-  border-radius: 5px;
   text-align: center;
   outline: none;
   text-decoration: none;
-  transition: background-color 0.5s ease-out,
-              border-color 0.5s ease-out,
-              color 0.5s ease-in;
+  transition: background-color 0.3s ease-out,
+              box-shadow 0.3s ease-in;
 }
 
 .light-button {
-  background-color: rgba(78, 97, 114, 1);
+  color: $dark-grey;
+  background-color: rgba(230, 230, 230, 1);
+  border: 1.5px solid transparent;
+  border-radius: 5px;
+}
+
+.ghost-button {
+  color: $white;
+  border: 1.5px solid $white;
+  border-radius: 5px;
 }
 
 .ghost-button:hover,
 .light-button:hover {
-  background-color: rgba(163, 173, 184, 0.5);
-  border-color: $white; /* fallback */
+  background-color: rgba(230, 230, 230, 0.7);
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, .4);
   transition: background-color 0.3s ease-in,
-              border-color 0.3s ease-in,
-              color 0.3s ease-in;
-}
-
-.light-button:hover {
-  background-color: rgba(163, 173, 184, 0.5);
+              box-shadow 0.3s ease-in;
 }
 
 /* Body styling and background images */
@@ -748,4 +750,20 @@ div.filter {
   display: none;
   color: $white;
   opacity: .7;
+}
+
+#home-sign-in-link {
+  font-weight: 100;
+  width: auto;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 1);
+  color: $white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: text-shadow 0.3s ease-in;
+}
+
+#home-sign-in-link:hover {
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 1);
+  transition: text-shadow 0.3s ease-in;
 }
