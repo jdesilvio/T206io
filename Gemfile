@@ -21,6 +21,7 @@ group :development, :test do
   gem 'capistrano-rails', '~> 1.1.1'
   gem 'figaro'
   gem 'thin'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :production do
