@@ -20,16 +20,10 @@
 
       <div class="content">
         <%= yield %>
-
-        <% if current_page?(authenticated_root_path) ||
-              current_page?(unauthenticated_root_path) ||
-              current_page?('/static_pages/landing') ||
-              current_page?('/static_pages/index') %>
-          <%= render 'layouts/footer_home' %>
-        <% else %>
-          <%= render 'layouts/footer' %>
-        <% end %>
       </div>
+
+      <%= render 'layouts/footer' %>
+
     </div>
   </body>
 </html>

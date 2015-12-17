@@ -175,16 +175,24 @@ html, body {
   padding: 0;
 }
 
+div.static-page-wrapper,
 div.wrapper-page {
-  margin: auto 0;
+  margin: 20px;
+}
+
+div.wrapper-page {
   padding: 200px 20px;
+}
+
+div.static-page-wrapper {
+  padding: 160px 20%;
 }
 
 .content {
   overflow: hidden;
   position: relative;
-  mask-image: linear-gradient(top, rgba(0,0,0,0) 96px , rgba(0,0,0,1)128px);
-  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 96px , rgba(0,0,0,1)128px);
+  mask-image: linear-gradient(top, rgba(0,0,0,0) 128px , rgba(0,0,0,1)160px);
+  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 128px , rgba(0,0,0,1)160px);
 }
 
 .title {
@@ -202,11 +210,6 @@ div#home-main {
 .home-text {
   color: $white;
   text-shadow: 0 2px 3px rgba(0,0,0,.4);
-}
-
-div.static-page-wrapper {
-  margin: 20px;
-  padding: 160px 20%;
 }
 
 /* Text syling */
@@ -463,12 +466,14 @@ body#devise_passwords-new {
 }
 
 #static_pages-landing .navbar-right a,
-#static_pages-index .navbar-right a {
+#static_pages-index .navbar-right a,
+#cards-new .navbar-right a {
   color: $white;
 }
 
 #static_pages-landing .navbar-right a:hover,
-#static_pages-index .navbar-right a:hover {
+#static_pages-index .navbar-right a:hover,
+#cards-new .navbar-right a:hover {
   color: $light-blue-grey;
 }
 
