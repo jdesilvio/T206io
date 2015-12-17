@@ -22,6 +22,9 @@ group :development, :test do
   gem 'figaro'
   gem 'thin'
   gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+  gem 'capybara'
 end
 
 group :production do

@@ -78,7 +78,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Devise configurations
-  config.action_mailer.default_url_options = { host: 't206.herokuapp.com/' }
+  config.action_mailer.default_url_options = { host: 't206.io/' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
 end
