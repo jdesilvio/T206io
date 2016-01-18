@@ -37,6 +37,8 @@ $dark-blue-grey: #4E6172;
 
   a { font-size: 100%; }
 
+  .user-actions a { font-size: 1.5em; }
+
   h2, h3, h4 {
     font-family:$fallback-body;
   }
@@ -48,17 +50,19 @@ $dark-blue-grey: #4E6172;
   }
 
   h2,
-  form input[type=submit],
   .ghost-button p,
   .light-button p,
   #home-sign-in-link p {
     font-size: 5.236em;
+    font-weight: normal;
   }
 
   h3,
+  form input[type=submit]
   div.card-input form select,
   div.card-input form select option  {
     font-size: 3.236em;
+    font-weight: normal;
   }
 
   h4 {
@@ -71,10 +75,7 @@ $dark-blue-grey: #4E6172;
   form input[type=submit],
   .ghost-button p,
   .light-button p,
-  #home-sign-in-link p {
-    font-family:$fallback-body;
-  }
-
+  #home-sign-in-link p,
   input[type="search"],
   table,
   th,
@@ -82,7 +83,12 @@ $dark-blue-grey: #4E6172;
   ul,
   li,
   .navbar-right a {
-    font-family:$font-body;
+    font-family:$fallback-body;
+  }
+
+  .container-fields,
+  .panel {
+    width: 100%;
   }
 }
 
@@ -105,6 +111,8 @@ $dark-blue-grey: #4E6172;
   li { font-size: 90%; }
 
   a { font-size: 100%; }
+
+  .user-actions a { font-size: 75%; }
 
   h2, h3, h4 {
     font-family:$font-body;
@@ -151,6 +159,11 @@ $dark-blue-grey: #4E6172;
   .light-button p,
   #home-sign-in-link p {
     font-family:$font-body;
+  }
+
+  .container-fields,
+  .panel {
+    width: 60%;
   }
 }
 
@@ -480,7 +493,6 @@ body#devise_passwords-new {
 }
 
 .user-actions a {
-  font-size: .75em;
   text-align:center;
   color: $dark-grey;
   text-decoration:none;
@@ -626,7 +638,6 @@ form select option {
 .panel {
   background: rgba(0, 0, 0, .5);
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
-  width: 60%;
   padding: 20px;
   margin: auto;
 }
