@@ -25,10 +25,6 @@ $dark-blue-grey: #4E6172;
   p,
   form input,
   input[type="search"],
-  table,
-  th,
-  td,
-  ul,
   .navbar-right a {
     font-size: 2em;
   }
@@ -69,6 +65,13 @@ $dark-blue-grey: #4E6172;
     font-size: 2em;
   }
 
+  table,
+  th,
+  td,
+  ul {
+    font-size: 1em;
+  }
+
   form input,
   div.card-input form select,
   div.card-input form select option,
@@ -88,7 +91,7 @@ $dark-blue-grey: #4E6172;
 
   .container-fields,
   .panel {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -630,7 +633,7 @@ form select option {
   border: none;
   position: relative;
   margin:0 auto;
-  width: auto;
+  width: 80%;
   padding: 0px 40px;
 }
 
