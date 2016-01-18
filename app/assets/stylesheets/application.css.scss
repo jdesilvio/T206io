@@ -25,6 +25,8 @@ $dark-blue-grey: #4E6172;
   p,
   form input,
   input[type="search"],
+  div.card-input form select,
+  div.card-input form select option,
   .navbar-right a {
     font-size: 2em;
   }
@@ -32,8 +34,6 @@ $dark-blue-grey: #4E6172;
   li { font-size: 90%; }
 
   a { font-size: 100%; }
-
-  .user-actions a { font-size: 1.5em; }
 
   h2, h3, h4 {
     font-family:$fallback-body;
@@ -45,18 +45,16 @@ $dark-blue-grey: #4E6172;
     font-weight: normal;
   }
 
-  h2,
-  .ghost-button p,
-  .light-button p,
-  #home-sign-in-link p {
+  h2 {
     font-size: 5.236em;
     font-weight: normal;
   }
 
   h3,
-  form input[type=submit]
-  div.card-input form select,
-  div.card-input form select option  {
+  form input[type=submit],
+  .ghost-button p,
+  .light-button p,
+  #home-sign-in-link p {
     font-size: 3.236em;
     font-weight: normal;
   }
@@ -93,6 +91,7 @@ $dark-blue-grey: #4E6172;
   .panel {
     width: 90%;
   }
+
 }
 
 /* Large Screen */
@@ -114,8 +113,6 @@ $dark-blue-grey: #4E6172;
   li { font-size: 90%; }
 
   a { font-size: 100%; }
-
-  .user-actions a { font-size: 75%; }
 
   h2, h3, h4 {
     font-family:$font-body;
@@ -183,22 +180,22 @@ html, body {
 
 div.static-page-wrapper,
 div.wrapper-page {
-  margin: 20px;
+  margin: 24px;
 }
 
 div.wrapper-page {
-  padding: 200px 20px;
+  padding: 64px 24px;
 }
 
 div.static-page-wrapper {
-  padding: 160px 20%;
+  padding: 64px 20%;
 }
 
 .content {
   overflow: hidden;
   position: relative;
-  mask-image: linear-gradient(top, rgba(0,0,0,0) 128px , rgba(0,0,0,1)160px);
-  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 128px , rgba(0,0,0,1)160px);
+  //mask-image: linear-gradient(top, rgba(0,0,0,0) 128px , rgba(0,0,0,1)160px);
+  //-webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 128px , rgba(0,0,0,1)160px);
 }
 
 .title {
@@ -418,22 +415,19 @@ body#devise_passwords-new {
 }
 
 #header {
-  height: 64px;
-	width: 100%;
-  position: fixed;
-  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
 	padding: 16px 0;
-  top: 0;
-  z-index: 99;
+}
+
+.logo-container {
+  margin: auto;
 }
 
 #header-logo {
   height: 64px;
-  margin: 0 0 0 5%;
-  padding: 0 0 0 5%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .home-nav {
@@ -444,22 +438,14 @@ body#devise_passwords-new {
 .nav-main {
   width: auto;
   float: left;
-  line-height: 24px;
   border-right: 2px solid $light-grey;
   margin-right: -1px;
   padding: 0 8px;
 }
 
 .navbar-right {
-  margin: 0 5% 0 0;
-  padding: 0 5% 0 0;
+  margin: auto;
   position: relative;
-  top: 100%;
-  transform: translateY(-100%);
-  float:right;
-  right: 0;
-  display:block;
-  overflow:hidden;
 }
 
 .navbar-right a {
@@ -488,11 +474,9 @@ body#devise_passwords-new {
 }
 
 .user-actions {
-    width: auto;
     float:right;
     padding: 0 8px;
     display: inline;
-    line-height: 24px;
 }
 
 .user-actions a {

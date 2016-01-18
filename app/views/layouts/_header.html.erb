@@ -1,21 +1,26 @@
 <div id="header">
-  <%= link_to image_tag("logo.png", alt: "Logo", id: "header-logo"), authenticated_root_path %>
-  <nav class="navbar-right">
+
+  <div class="logo-container">
+    <%= link_to image_tag("logo.png", alt: "Logo", id: "header-logo"), authenticated_root_path %>
+  </div>
+
+  <div class="navbar-right">
+
     <div class="nav-main">
       <%= link_to "Home", '/' %>
       <%= link_to "About", static_pages_about_path %>
       <%= link_to "Contribute", static_pages_contribute_path %>
     </div>
+
     <div class="user-actions">
       <% if user_signed_in? %>
         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
       <% else %>
         <%= link_to "Sign In", new_user_session_path %>
-        <div class="sign-up-button">
-          <%= link_to "Sign Up", new_user_registration_path %>
-        </div>
+        <%= link_to "Sign Up", new_user_registration_path %>
       <% end %>
     </div>
 
- </nav>
+  </div>
+
 </div>
