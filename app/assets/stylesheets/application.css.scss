@@ -21,70 +21,91 @@ $dark-blue-grey: #4E6172;
 
 /* Small Screen */
 @media (min-device-width: 0px) and (max-device-width: 767px) {
+
+  p,
+  form input,
+  input[type="search"],
+  table,
+  th,
+  td,
+  ul,
+  .navbar-right a {
+    font-size: 2em;
+  }
+
+  li { font-size: 90%; }
+
+  a { font-size: 100%; }
+
   h2, h3, h4 {
     font-family:$fallback-body;
   }
 
   h1 {
     font-family: $font-header;
-    font-size: 6em;
+    font-size: 8.472em;
     font-weight: normal;
   }
 
-  h2 {
-    font-size: 3.75em;
+  h2,
+  form input[type=submit],
+  .ghost-button p,
+  .light-button p,
+  #home-sign-in-link p {
+    font-size: 5.236em;
   }
 
-  h3 {
-    font-size: 2.625em;
+  h3,
+  div.card-input form select,
+  div.card-input form select option  {
+    font-size: 3.236em;
   }
 
   h4 {
     font-size: 2em;
   }
 
+  form input,
+  div.card-input form select,
+  div.card-input form select option,
   form input[type=submit],
   .ghost-button p,
   .light-button p,
   #home-sign-in-link p {
     font-family:$fallback-body;
-    font-size: 2.25em;
   }
 
-  div.card-input form select,
-  div.card-input form select option {
-    font-family:$fallback-body;
-    font-size: 1.5em;
-  }
-
-  form input {
-    font-family:$fallback-body;
-    font-size: 1.5em;
-  }
-
-  input[type="search"] {
-    font-family:$fallback-body;
-    font-size: 1.5em;
-  }
-
-  table {
-    font-family:$fallback-body;
-    font-size: 1.5em;
-  }
-
-  th, td, ul, li {
-    font-family:$fallback-body;
-    font-size: 1.5em;
-  }
-
+  input[type="search"],
+  table,
+  th,
+  td,
+  ul,
+  li,
   .navbar-right a {
-    font-family:$fallback-body;
-    font-size: 1.5em;
+    font-family:$font-body;
   }
 }
 
 /* Large Screen */
 @media (min-device-width: 768px) {
+
+  p,
+  form input,
+  input[type="search"],
+  table,
+  th,
+  td,
+  ul,
+  .navbar-right a,
+  div.card-input form select,
+  div.card-input form select option {
+    font-size: 1em;
+  }
+
+  li { font-size: 90%; }
+
+  a { font-size: 100%; }
+
   h2, h3, h4 {
     font-family:$font-body;
     font-weight: 100;
@@ -92,59 +113,44 @@ $dark-blue-grey: #4E6172;
 
   h1 {
     font-family: $font-header;
-    font-size: 4em;
+    font-size: 4.236em;
     font-weight: normal;
   }
 
   h2 {
-    font-size: 2.5em;
+    font-size: 2.618em;
   }
 
-  h3 {
-    font-size: 1.75em;
-  }
-
-  h4 {
-    font-size: 1.5em;
-  }
-
+  h3,
   form input[type=submit],
   .ghost-button p,
   .light-button p,
   #home-sign-in-link p {
-    font-family:$font-body;
-    font-size: 1.5em;
+    font-size: 1.618em;
   }
 
-  div.card-input form select,
-  div.card-input form select option {
-    font-family:$font-body;
+  h4 {
     font-size: 1em;
   }
 
   form input {
     font-family:$fallback-body;
-    font-size: 1em;
   }
 
-  input[type="search"] {
+  input[type="search"],
+  table,
+  th,
+  td,
+  ul,
+  li,
+  .navbar-right a,
+  div.card-input form select,
+  div.card-input form select option,
+  form input[type=submit],
+  .ghost-button p,
+  .light-button p,
+  #home-sign-in-link p {
     font-family:$font-body;
-    font-size: 1em;
-  }
-
-  table {
-    font-family:$font-body;
-    font-size: 1em;
-  }
-
-  th, td, ul, li {
-    font-family:$font-body;
-    font-size: 1em;
-  }
-
-  .navbar-right a {
-    font-family:$font-body;
-    font-size: 1em;
   }
 }
 
@@ -216,7 +222,6 @@ div#home-main {
 p, a {
   font-family:$font-body;
   font-variant-numeric: oldstyle-nums;
-  font-size: 16px;
 }
 
 a {
@@ -232,8 +237,13 @@ a:hover {
   color: $white;
 }
 
+.devise-links {
+  padding: 0.5rem;
+}
+
 .devise-links a {
   color: $dark-grey;
+  line-height: 1.5;
 }
 
 .devise-links a:hover {
