@@ -21,7 +21,7 @@ $dark-blue-grey: #4E6172;
 
 /* Small Screen */
 @media (min-device-width: 0px) and (max-device-width: 767px) {
-  h2, h3, h4, h5, h6 {
+  h2, h3, h4 {
     font-family:$fallback-body;
   }
 
@@ -41,14 +41,6 @@ $dark-blue-grey: #4E6172;
 
   h4 {
     font-size: 2em;
-  }
-
-  h5 {
-    font-size: 1.875em;
-  }
-
-  h6 {
-    font-size: 1.5em;
   }
 
   form input[type=submit],
@@ -93,7 +85,7 @@ $dark-blue-grey: #4E6172;
 
 /* Large Screen */
 @media (min-device-width: 768px) {
-  h2, h3, h4, h5, h6 {
+  h2, h3, h4 {
     font-family:$font-body;
     font-weight: 100;
   }
@@ -114,14 +106,6 @@ $dark-blue-grey: #4E6172;
 
   h4 {
     font-size: 1.5em;
-  }
-
-  h5 {
-    font-size: 1.25em;
-  }
-
-  h6 {
-    font-size: 1em;
   }
 
   form input[type=submit],
@@ -256,7 +240,7 @@ a:hover {
   text-shadow: 0 1px 2px rgba(0,0,0,.4);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   font-variant-numeric: oldstyle-nums;
   margin: 12px 0;
 }
