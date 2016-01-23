@@ -163,7 +163,7 @@ $dark-blue-grey: #4E6172;
 
   .container-fields,
   .panel {
-    width: 60%;
+    width: 512px;
   }
 }
 
@@ -180,20 +180,21 @@ html, body {
 
 div.static-page-wrapper,
 div.wrapper-page {
-  margin: 24px;
+  margin: 16px;
 }
 
 div.wrapper-page {
-  padding: 64px 24px;
+  padding: 32px 16px;
 }
 
 div.static-page-wrapper {
-  padding: 64px 20%;
+  padding: 32px 20%;
 }
 
 .content {
   overflow: hidden;
   position: relative;
+  padding: 64px;
   //mask-image: linear-gradient(top, rgba(0,0,0,0) 128px , rgba(0,0,0,1)160px);
   //-webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 128px , rgba(0,0,0,1)160px);
 }
@@ -381,19 +382,21 @@ body#devise_passwords-new {
 }
 
 #footer {
-  background: $dark-grey;
-  height: 30px;
-  line-height: 30px;
+  text-align: center;
+  background: rgba(0,0,0,.5);
+  height: 16px;
+  line-height: 16px;
   float: left;
   overflow:hidden;
   margin: 0;
-	padding: 25px 0px;
+	padding: 16px 0px;
 	width: 100%;
   box-shadow: 0 -2px 3px rgba(0,0,0,.4);
   position: fixed;
   bottom: 0;
 }
 
+//remove?
 #footer small {
   padding: 0px 25px;
 }
@@ -405,8 +408,8 @@ body#devise_passwords-new {
 }
 
 .git-link {
+  text-align: center;
   color: $white;
-  font-size: 1em;
   text-decoration: none;
 }
 
@@ -510,12 +513,12 @@ body#devise_passwords-new {
 
 .wrapper-center {
   text-align: center;
-  padding: 140px;
+  padding: 16px;
   margin: 0;
 }
 
 div.field {
-  padding: 16px;
+  padding: 8px;
 }
 
 div.card-input {
@@ -629,7 +632,7 @@ form select option {
 .panel {
   background: rgba(0, 0, 0, .5);
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
-  padding: 20px;
+  padding: 16px;
   margin: auto;
 }
 
