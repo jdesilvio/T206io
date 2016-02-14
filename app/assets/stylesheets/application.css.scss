@@ -286,7 +286,6 @@ h1, h2, h3, h4 {
 
 .ghost-button,
 .light-button {
-  width: 400px;
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
   padding: 0px 20px;
   margin: 32px auto;
@@ -296,6 +295,12 @@ h1, h2, h3, h4 {
   text-decoration: none;
   transition: background-color 0.3s ease-out,
               box-shadow 0.3s ease-in;
+  @media (min-device-width: 0px) and (max-device-width: 767px) {
+    width: 100%;
+  }
+  @media (min-device-width: 768px) {
+    width: 400px;
+  }
 }
 
 .light-button {
@@ -432,6 +437,8 @@ body#devise_passwords-new {
   position: relative;
 	padding: 16px 0;
 }
+
+.header-div { padding: 16px; }
 
 .logo-container {
   margin: auto;
