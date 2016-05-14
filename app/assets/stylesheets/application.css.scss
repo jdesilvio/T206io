@@ -382,8 +382,8 @@ body#devise_passwords-new {
   height: 30px;
   line-height: 30px;
   float: left;
-	padding: 25px;
-	min-width: 100%;
+  padding: 25px;
+  min-width: 100%;
   margin: 0% -8px;
   box-shadow: 0 -2px 3px rgba(0,0,0,.4);
   position: fixed;
@@ -398,8 +398,8 @@ body#devise_passwords-new {
   float: left;
   overflow:hidden;
   margin: 0;
-	padding: 16px 0px;
-	width: 100%;
+  padding: 16px 0px;
+  width: 100%;
   box-shadow: 0 -2px 3px rgba(0,0,0,.4);
   position: fixed;
   bottom: 0;
@@ -435,7 +435,7 @@ body#devise_passwords-new {
   justify-content: space-around;
   flex-wrap: wrap;
   position: relative;
-	padding: 16px 0;
+  padding: 16px 0;
 }
 
 .header-div { padding: 16px; }
@@ -642,9 +642,22 @@ form select option {
 .container-fields,
 .panel {
   background: rgba(0, 0, 0, .5);
-  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, .4);
+  transition: background 0.3s ease-in,
+              box-shadow 0.3s ease-in,
+              text-shadow 0.3s ease-in;
   padding: 16px;
-  margin: auto;
+  margin: 16px auto;
+}
+
+.panel:hover {
+  background: rgba(0, 0, 0, .6);
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, .4);
+  text-shadow: 3px 6px 6px rgba(0, 0, 0, .4);
+  transition: background 0.3s ease-in,
+              box-shadow 0.3s ease-in,
+              text-shadow 0.3s ease-in;
 }
 
 .panel-text-light {
@@ -702,15 +715,15 @@ tbody tr:nth-child(odd) {
 input[type="search"] {
   margin: 0 0 10px 0;
   padding: 10px;
-	width: 80%;
-	border: 1px solid $light-grey;
+  width: 80%;
+  border: 1px solid $light-grey;
 }
 
 input[type="search"]:focus {
-	border-color: $light-grey;
-	background: $white;
-	color: $black;
-	box-shadow: 0 1px 1px rgba(78, 97, 114, 0.075) inset, 0 0 8px rgba(78, 97, 114, 0.6);
+  border-color: $light-grey;
+  background: $white;
+  color: $black;
+  box-shadow: 0 1px 1px rgba(78, 97, 114, 0.075) inset, 0 0 8px rgba(78, 97, 114, 0.6);
   outline: 0;
 }
 
