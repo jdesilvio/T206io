@@ -30,7 +30,7 @@ _Source: [Wikipedia](https://en.wikipedia.org/wiki/T206)_
 
 * **Built with:** `AWS RDS PostgreSQL` database; **ETL** is a combinaiton of `Python` scripts for scraping data and `R` for cleaning, transforming and loading the data.
 
-* **Dev Ops:** `AWS RDS` database, `EC2` for running `ETL` and `S3` for storing data backups.
+* **Dev Ops:** `AWS RDS` database, `EC2` for running _ETL_ scripts and `S3` for storing data backups.
 
 * **Repository:**  NA
 
@@ -38,9 +38,9 @@ _Source: [Wikipedia](https://en.wikipedia.org/wiki/T206)_
 
 * **Description:** Upload an image of a card in the **T206** set  and an algorithm will match image keypoints and descriptors against a database of images and return the most likely match.
 
-* **Built with:** `Python`, `Flask`, `OpenCV`, `HDF5` and `Docker` (see: https://github.com/jdesilvio/py-opencv-hdf5-docker)
+* **Built with:** `Python`, [`Flask`](http://flask.pocoo.org/), [`OpenCV`](http://opencv.org/), [`HDF5`](https://www.hdfgroup.org/HDF5/) and [`Docker`](https://www.docker.com/) (see: https://github.com/jdesilvio/py-opencv-hdf5-docker)
 
-* **Dev Ops:** `Digital Ocean` `Docker` droplet \*_still need to serve via `nginx`_
+* **Dev Ops:** [`Digital Ocean`](https://www.digitalocean.com/) `Docker` droplet
 
 * **Repository:** https://github.com/jdesilvio/T206-computer-vision and https://github.com/jdesilvio/T206-computer-vision-data
 
