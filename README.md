@@ -7,12 +7,13 @@ I started this project to learn how to build a `Ruby on Rails` app for my new ho
 ##The T206 baseball card set:
 
 <p align="center">
-    <img src="http://caimages.collectors.com/psacertimages/38768_599x996.jpg" width="300">
+    <img src="http://caimages.collectors.com/psacertimages/38768_599x996.jpg" width="250">
 </p>
 
 > The tobacco card set known as T206 was issued from 1909 to 1911 in cigarette and loose tobacco packs through 16 different brands owned by the American Tobacco Company. It is a landmark set in the history of baseball card collecting, due to its size, rarity, and the quality of its color lithographs.
 
 _Source: [Wikipedia](https://en.wikipedia.org/wiki/T206)_
+
 _Image:  [PSA](http://www.psacard.com/cardfacts/baseball-cards/1909-1911-t206-white-border/honus-wagner/18155)_
 
 ---
