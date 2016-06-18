@@ -2,13 +2,13 @@
 
 ##Purpose:
 
-I started this project to learn how to build a `**Ruby on Rails**` app for my new hobby, collecting the **T206 baseball card set**. It has since become a place where I can purposefully use different skills that I learn and, _hopefully_, deploy new features, apps and micro-services that are useful to the **T206** community and can spawn new research and discoveries.
+I started this project to learn how to build a `Ruby on Rails` app for my new hobby, collecting the **T206 baseball card set**. It has since become a place where I can purposefully use different skills that I learn and, _hopefully_, deploy new features, apps and micro-services that are useful to the **T206** community and can spawn new research and discoveries.
 
 ##The T206 baseball card set:
 
 The tobacco card set known as T206 was issued from 1909 to 1911 in cigarette and loose tobacco packs through 16 different brands owned by the American Tobacco Company. It is a landmark set in the history of baseball card collecting, due to its size, rarity, and the quality of its color lithographs.
 
-_Source: Wikipedia_
+_Source: [Wikipedia](https://en.wikipedia.org/wiki/T206)_
 
 ---
 
@@ -20,7 +20,7 @@ _Source: Wikipedia_
 
 * **Built with:** `Ruby on Rails` and `PostgreSQL`
 
-* **Dev Ops:** `Heroku`
+* **Dev Ops:** [`Heroku`](https://www.heroku.com/)
 
 * **Repository:** https://github.com/jdesilvio/t206io
 
