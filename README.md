@@ -20,7 +20,7 @@ _Image:  [PSA](http://www.psacard.com/cardfacts/baseball-cards/1909-1911-t206-wh
 
 ##Current Features
 
-####Ruby on Rails app
+####[Ruby on Rails app](http://www.t206.io/)
 
 * **Description:** An app to handle the organization of landing pages, user authentication and generally connecting all the pieces to give a consistent user experience.
 
@@ -32,23 +32,25 @@ _Image:  [PSA](http://www.psacard.com/cardfacts/baseball-cards/1909-1911-t206-wh
 
 ####Data
 
-* **Description:** An external database is used to aggregate and store all the data that I have collected and derived within the domain of the **T206** baseball card set. This includes a large amount of descriptive data about the cards themselves (player, team, etc.), population (rarity) reports, etc. 
+* **Description:** I created an external database to aggregate and store all the data that I have collected and derived within the domain of the **T206** baseball card set. This includes a large amount of descriptive data about the cards themselves (player, team, etc.), population (rarity) reports, etc. 
 
-* **Built with:** `AWS RDS PostgreSQL` database; **ETL** is a combinaiton of `Python` scripts for scraping data and `R` for cleaning, transforming and loading the data.
+* **Built with:** `AWS RDS PostgreSQL` database; _ETL_ is a combinaiton of `Python` scripts for scraping data and `R` for cleaning, transforming and loading the data.
 
 * **Dev Ops:** `AWS RDS` database, `EC2` for running _ETL_ scripts and `S3` for storing data backups.
 
 * **Repository:**  NA
 
-####`Python Flask` Computer Vision app (_work in progress_)
+####[`Python Flask` Computer Vision app](http://192.81.208.139/) (_work in progress_)
+
+_**Note:** After clicking a card, the search takes several minutes as it has not been optimized yet._
 
 * **Description:** Upload an image of a card in the **T206** set  and an algorithm will match image keypoints and descriptors against a database of images and return the most likely match.
 
-* **Built with:** `Python`, [`Flask`](http://flask.pocoo.org/), [`OpenCV`](http://opencv.org/), [`HDF5`](https://www.hdfgroup.org/HDF5/) and [`Docker`](https://www.docker.com/) (see: https://github.com/jdesilvio/py-opencv-hdf5-docker)
+* **Built with:** `Python`, [`Flask`](http://flask.pocoo.org/), [`OpenCV`](http://opencv.org/), [`HDF5`](https://www.hdfgroup.org/HDF5/) and [`Docker`](https://www.docker.com/) (for initial `Docker` environments, see [here](https://github.com/jdesilvio/opencv-flask-docker) and [here](https://github.com/jdesilvio/py-opencv-hdf5-docker))
 
 * **Dev Ops:** [`Digital Ocean`](https://www.digitalocean.com/) `Docker` droplet
 
-* **Repository:** https://github.com/jdesilvio/T206-computer-vision and https://github.com/jdesilvio/T206-computer-vision-data
+* **Repository:** [app container](https://github.com/jdesilvio/T206-computer-vision) and [data container](https://github.com/jdesilvio/T206-computer-vision-data)
 
 ---
 
