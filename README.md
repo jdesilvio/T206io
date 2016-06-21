@@ -28,7 +28,7 @@ _Image:  [PSA](http://www.psacard.com/cardfacts/baseball-cards/1909-1911-t206-wh
 
 * **Dev Ops:** [`Heroku`](https://www.heroku.com/)
 
-* **Repository:** https://github.com/jdesilvio/t206io
+* **Repository:** https://github.com/jdesilvio/T206io
 
 ####Data
 
@@ -38,7 +38,7 @@ _Image:  [PSA](http://www.psacard.com/cardfacts/baseball-cards/1909-1911-t206-wh
 
 * **Dev Ops:** `AWS RDS` database, `EC2` for running _ETL_ scripts and `S3` for storing data backups.
 
-* **Repository:**  NA
+* **Repository:** https://github.com/jdesilvio/T206db
 
 ####[`Python Flask` Computer Vision app](http://192.81.208.139/) (_work in progress_)
 
