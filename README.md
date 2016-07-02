@@ -4,12 +4,13 @@
 
 I started this project to learn how to build a `Ruby on Rails` app for my new hobby, collecting the **T206 baseball card set**. It has since become a place where I can purposefully use different skills that I learn and, _hopefully_, deploy new features, apps and micro-services that are useful to the **T206** community and can spawn new research and discoveries.
 
-##Guest Login
+##Guest Login:
 
 If you'd like to take a look around the site, please use:
 
-> *email:* tycobb@t206.io
-> *password:* baseball
+> **email:** tycobb@t206.io
+
+> **password:** baseball
 
 If you are at all interested in the site, I encourage you to sign up. I promise that I will never give your email out. I only want it to build a list of people interested in T206 and the site, and, hopefully, start a community.
 
