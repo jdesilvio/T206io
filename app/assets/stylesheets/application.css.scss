@@ -36,7 +36,7 @@ $dark-blue-grey: #4E6172;
   a { font-size: 100%; }
 
   h2, h3, h4 {
-    font-family:$fallback-body;
+    font-family:$font-body;
   }
 
   h1 {
@@ -84,7 +84,7 @@ $dark-blue-grey: #4E6172;
   ul,
   li,
   .navbar-right a {
-    font-family:$fallback-body;
+    font-family:$font-body;
   }
 
   .container-fields,
@@ -151,7 +151,7 @@ $dark-blue-grey: #4E6172;
   }
 
   form input {
-    font-family:$fallback-body;
+    font-family:$font-body;
   }
 
   input[type="search"],
