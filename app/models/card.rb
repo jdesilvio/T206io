@@ -25,6 +25,10 @@ class Psa_pop < Pgdb
   self.table_name = 'psa_pop_view'
 end
 
+class Psa_card < Pgdb
+  self.table_name = 'psa_card'
+end
+
 class Agg_backs < Pgdb
   self.table_name = 'agg_backs'
 end

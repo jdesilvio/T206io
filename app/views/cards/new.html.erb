@@ -5,7 +5,7 @@
   <div class="panel">
     <div class="card-input body-text oldnum">
       <%= form_for @card do |f| %>
-        <%= f.select :card_name, options_from_collection_for_select(Psa_pop.select(:psa_card).distinct.order(:psa_card), :psa_card, :psa_card, ) %>
+        <%= f.select :card_name, options_from_collection_for_select(Psa_card.select(:psa_card).distinct.order(:psa_card), :psa_card, :psa_card, ) %>
         </br>
         <%= f.submit "Card Details"%>
       <% end %>
