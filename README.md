@@ -70,7 +70,7 @@ _**Note:** After clicking a card, the search takes several minutes as it has not
 
 ---
 
-####Notes:
+####Notes (mainly for myself):
 
 * Connecting to an external database - Scraped, collected and derived data on the T206 set from various sources and keep this information in a database hosted on `AWS RDS (PostgreSQL)` instance. Since this data is not integral or solely used for this app, I decided to house it in an external database and connect this app to the database to retrieve data when necessary. To do this, I defined `config variables` in `Heroku`, then called them to connect to the database and query it via the `ActiveRecord Query Interface`.
 
@@ -78,6 +78,6 @@ _**Note:** After clicking a card, the search takes several minutes as it has not
 
 * Photos - The majority (if not all) of the photos for this site are and will be from the [Library of Congress](http://www.loc.gov/photos) which is a **great** source of vintage photos available to the public with super high-resolution downloads.
 
-* Design/CSS - One of the most challenging areas I have found is `CCS` (which surprised me somewhat). This is especially true when deigning for multiple browsers and media types. For this site, I wanted to forego using a framework like `Bootstrap` and hand code the `CSS` as a learning experience.
+* Design/CSS - One of the most challenging areas I have found is `CSS` (which surprised me somewhat). This is especially true when deigning for multiple browsers and media types. For this site, I wanted to forego using a framework like `Bootstrap` and hand code the `CSS` as a learning experience.
 
 * `Docker` for `OpenCV` and `HDF5` - This took several months to figure out. The order of the installation of each component proved to be more frustration than anticipated due to system paths and dependencies mainly on the `Python` side. There were also system level memory issues that needed to be addressed by using a `swapfile`. Finally, linking the app and data containers together while also building the `HDF5` dataset from images stored in `S3`.
