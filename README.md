@@ -50,7 +50,7 @@ _Image:  [PSA](http://www.psacard.com/cardfacts/baseball-cards/1909-1911-t206-wh
 
 * **Repository:** https://github.com/jdesilvio/T206db
 
-####[`Python Flask` Computer Vision app](http://192.81.208.139/) (_work in progress_)
+####[`Python Flask` Computer Vision app](http://cv.t206.io) (_work in progress_)
 
 _**Note:** After clicking a card, the search takes several minutes as it has not been optimized yet._
 
