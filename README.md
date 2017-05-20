@@ -1,10 +1,10 @@
-#[T206.io](http://www.t206.io/)
+# [T206.io](http://www.t206.io/)
 
-##Purpose:
+## Purpose:
 
 I started this project to learn how to build a `Ruby on Rails` app for my new hobby, collecting the **T206 baseball card set**. It has since become a place where I can purposefully use different skills that I learn and, _hopefully_, deploy new features, apps and micro-services that are useful to the **T206** community and can spawn new research and discoveries.
 
-##Guest Login:
+## Guest Login:
 
 If you'd like to take a look around the site, please use:
 
@@ -14,7 +14,7 @@ If you'd like to take a look around the site, please use:
 
 If you are at all interested in the site, I encourage you to sign up. I promise that I will never give your email out. I only want it to build a list of people interested in T206 and the site, and, hopefully, start a community.
 
-##The T206 baseball card set:
+## The T206 baseball card set:
 
 <p align="center">
     <img src="http://caimages.collectors.com/psacertimages/38768_599x996.jpg" width="250">
@@ -28,9 +28,9 @@ _Image:  [PSA](http://www.psacard.com/cardfacts/baseball-cards/1909-1911-t206-wh
 
 ---
 
-##Current Features
+## Current Features
 
-####[Ruby on Rails app](http://www.t206.io/)
+#### [Ruby on Rails app](http://www.t206.io/)
 
 * **Description:** An app to handle the organization of landing pages, user authentication and generally connecting all the pieces to give a consistent user experience.
 
@@ -40,7 +40,7 @@ _Image:  [PSA](http://www.psacard.com/cardfacts/baseball-cards/1909-1911-t206-wh
 
 * **Repository:** https://github.com/jdesilvio/T206io
 
-####Data
+#### Data
 
 * **Description:** I created an external database to aggregate and store all the data that I have collected and derived within the domain of the **T206** baseball card set. This includes a large amount of descriptive data about the cards themselves (player, team, etc.), population (rarity) reports, etc. 
 
@@ -50,7 +50,7 @@ _Image:  [PSA](http://www.psacard.com/cardfacts/baseball-cards/1909-1911-t206-wh
 
 * **Repository:** https://github.com/jdesilvio/T206db
 
-####[`Python Flask` Computer Vision app](http://cv.t206.io) (_work in progress_)
+#### [`Python Flask` Computer Vision app](http://cv.t206.io) (_work in progress_)
 
 _**Note:** After clicking a card, the search takes several minutes as it has not been optimized yet._
 
@@ -64,13 +64,13 @@ _**Note:** After clicking a card, the search takes several minutes as it has not
 
 ---
 
-###Roadmap
+### Roadmap
 
 * **Card value predictor** - A machine-learning algorithm that takes in auction data from major auctions (eBay, Robert Edwards, etc.) and can more accurately predict current value than any other T206 price guide.
 
 ---
 
-####Notes (mainly for myself):
+#### Notes (mainly for myself):
 
 * Connecting to an external database - Scraped, collected and derived data on the T206 set from various sources and keep this information in a database hosted on `AWS RDS (PostgreSQL)` instance. Since this data is not integral or solely used for this app, I decided to house it in an external database and connect this app to the database to retrieve data when necessary. To do this, I defined `config variables` in `Heroku`, then called them to connect to the database and query it via the `ActiveRecord Query Interface`.
 
